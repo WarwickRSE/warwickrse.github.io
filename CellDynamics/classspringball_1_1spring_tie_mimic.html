@@ -63,19 +63,20 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>springball</b></li><li class="navelem"><a class="el" href="classspringball_1_1spring_tie_mimic.html">springTieMimic</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacespringball.html">springball</a></li><li class="navelem"><a class="el" href="classspringball_1_1spring_tie_mimic.html">springTieMimic</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classspringball_1_1spring_tie_mimic-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">springball::springTieMimic Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Counterpart to <a class="el" href="classspringball_1_1spring_tie_primary.html" title="A spring tying some ball to some ball in (generally) another set This force can be unattached,...">springTiePrimary</a>.  
+<p>Counterpart to <a class="el" href="classspringball_1_1spring_tie_primary.html" title="A spring tying some ball to some ball in (generally) another set.">springTiePrimary</a>.  
  <a href="classspringball_1_1spring_tie_mimic.html#details">More...</a></p>
 
 <p><code>#include &lt;ballset.h&gt;</code></p>
@@ -99,9 +100,24 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a1f8e474f2f20de0471fa6757083970ab"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1spring_tie_mimic.html#a1f8e474f2f20de0471fa6757083970ab">implicit</a> = false</td></tr>
 <tr class="separator:a1f8e474f2f20de0471fa6757083970ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad62671b004309d8ca7c7308019ab2bc8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1spring_tie_mimic.html#ad62671b004309d8ca7c7308019ab2bc8">ball_num</a> {0}</td></tr>
+<tr class="separator:ad62671b004309d8ca7c7308019ab2bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74018c3a2490cee94e02d58563f6443"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1spring_tie_mimic.html#ab74018c3a2490cee94e02d58563f6443">force_updated</a> = false</td></tr>
+<tr class="separator:ab74018c3a2490cee94e02d58563f6443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a651ea0d2bf60880247e64db69628ba30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1spring_tie_mimic.html#a651ea0d2bf60880247e64db69628ba30">active</a> =false</td></tr>
+<tr class="separator:a651ea0d2bf60880247e64db69628ba30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afecf821f470ca19b3d2562c27f30b9c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1spring_tie_mimic.html#afecf821f470ca19b3d2562c27f30b9c7">direction_bad</a> = false</td></tr>
+<tr class="separator:afecf821f470ca19b3d2562c27f30b9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23ef356a756a055a16754396a5eac588"><td class="memItemLeft" align="right" valign="top">Force&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1spring_tie_mimic.html#a23ef356a756a055a16754396a5eac588">frc</a> {0.0, 0.0, 0.0}</td></tr>
+<tr class="separator:a23ef356a756a055a16754396a5eac588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43f26293bf4180e846712a77c9464f7d"><td class="memItemLeft" align="right" valign="top">Position&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1spring_tie_mimic.html#a43f26293bf4180e846712a77c9464f7d">alongTube</a> {0.0, 0.0, 0.0}</td></tr>
+<tr class="separator:a43f26293bf4180e846712a77c9464f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Counterpart to <a class="el" href="classspringball_1_1spring_tie_primary.html" title="A spring tying some ball to some ball in (generally) another set This force can be unattached,...">springTiePrimary</a>. </p>
+<div class="textblock"><p >Counterpart to <a class="el" href="classspringball_1_1spring_tie_primary.html" title="A spring tying some ball to some ball in (generally) another set.">springTiePrimary</a>. </p>
 <p >A simple fixed force to be applied. To ensure conservation, this should be the equal-and-opposite force from some other entity to allow connections between them. This end is assumed to be fixed to a specific ball in the ballset (this could be changed if needed). </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000001">Caveat:</a></b></dt><dd>The force here is simply applied by value, so must have already been populated. In Debug mode this is strictly enforced. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5528df1b1e61bd9a4ae511b44b4174d2" name="a5528df1b1e61bd9a4ae511b44b4174d2"></a>
@@ -306,6 +322,144 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a651ea0d2bf60880247e64db69628ba30" name="a651ea0d2bf60880247e64db69628ba30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a651ea0d2bf60880247e64db69628ba30">&#9670;&nbsp;</a></span>active</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool springball::springTieMimic::active =false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Whether this force is currently active </p>
+
+</div>
+</div>
+<a id="a43f26293bf4180e846712a77c9464f7d" name="a43f26293bf4180e846712a77c9464f7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43f26293bf4180e846712a77c9464f7d">&#9670;&nbsp;</a></span>alongTube</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Position springball::springTieMimic::alongTube {0.0, 0.0, 0.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Direction along ballset of primary at current attachment point </p>
+
+</div>
+</div>
+<a id="ad62671b004309d8ca7c7308019ab2bc8" name="ad62671b004309d8ca7c7308019ab2bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad62671b004309d8ca7c7308019ab2bc8">&#9670;&nbsp;</a></span>ball_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t springball::springTieMimic::ball_num {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Ball number to apply force to </p>
+
+</div>
+</div>
+<a id="afecf821f470ca19b3d2562c27f30b9c7" name="afecf821f470ca19b3d2562c27f30b9c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afecf821f470ca19b3d2562c27f30b9c7">&#9670;&nbsp;</a></span>direction_bad</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool springball::springTieMimic::direction_bad = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Debug flag - tracks whether stored direction is valid, alerts when looked up if not </p>
+
+</div>
+</div>
+<a id="ab74018c3a2490cee94e02d58563f6443" name="ab74018c3a2490cee94e02d58563f6443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74018c3a2490cee94e02d58563f6443">&#9670;&nbsp;</a></span>force_updated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool springball::springTieMimic::force_updated = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Debug flag- whether force has been updated since it was last applied </p>
+
+</div>
+</div>
+<a id="a23ef356a756a055a16754396a5eac588" name="a23ef356a756a055a16754396a5eac588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23ef356a756a055a16754396a5eac588">&#9670;&nbsp;</a></span>frc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Force springball::springTieMimic::frc {0.0, 0.0, 0.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Value of force to apply </p>
+
+</div>
+</div>
 <a id="a1f8e474f2f20de0471fa6757083970ab" name="a1f8e474f2f20de0471fa6757083970ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f8e474f2f20de0471fa6757083970ab">&#9670;&nbsp;</a></span>implicit</h2>
 

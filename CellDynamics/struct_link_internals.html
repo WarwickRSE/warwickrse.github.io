@@ -71,61 +71,29 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Struct for internal parameters of a link. Used for setup.  
+ <a href="struct_link_internals.html#details">More...</a></p>
+
 <p><code>#include &lt;SharedStructs.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3c3593d97661bd638d5ae7b35ecfbe1e"><td class="memItemLeft" align="right" valign="top"><a id="a3c3593d97661bd638d5ae7b35ecfbe1e" name="a3c3593d97661bd638d5ae7b35ecfbe1e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setValues</b> (const <a class="el" href="classinputs.html">inputs</a> &amp;init)</td></tr>
+<tr class="memdesc:a3c3593d97661bd638d5ae7b35ecfbe1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the values from inputs. <br /></td></tr>
 <tr class="separator:a3c3593d97661bd638d5ae7b35ecfbe1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a59650ccc5bebd4bab542fe4dddc073a7"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_link_internals.html#a59650ccc5bebd4bab542fe4dddc073a7">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="struct_link_internals.html">LinkInternals</a> &amp;ins)</td></tr>
+<tr class="memitem:a59650ccc5bebd4bab542fe4dddc073a7"><td class="memItemLeft" align="right" valign="top"><a id="a59650ccc5bebd4bab542fe4dddc073a7" name="a59650ccc5bebd4bab542fe4dddc073a7"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, const <a class="el" href="struct_link_internals.html">LinkInternals</a> &amp;ins)</td></tr>
+<tr class="memdesc:a59650ccc5bebd4bab542fe4dddc073a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out the struct. <br /></td></tr>
 <tr class="separator:a59650ccc5bebd4bab542fe4dddc073a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Struct for internal parameters of a link. Used for setup</p>
+<div class="textblock"><p >Struct for internal parameters of a link. Used for setup. </p>
 <p >All internal parameter structs: contain properties of simulation objects which can be set by the input system. This simplifies the setup, at slight cost of clarity, as the params are not directly set in the object constructors/available in the object definitions. </p>
-</div><h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a59650ccc5bebd4bab542fe4dddc073a7" name="a59650ccc5bebd4bab542fe4dddc073a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59650ccc5bebd4bab542fe4dddc073a7">&#9670;&nbsp;</a></span>operator&lt;&lt;</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_link_internals.html">LinkInternals</a> &amp;&#160;</td>
-          <td class="paramname"><em>ins</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Write out the struct</p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/SharedStructs.h</li>
 </ul>
 </div><!-- contents -->

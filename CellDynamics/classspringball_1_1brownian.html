@@ -63,17 +63,21 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>springball</b></li><li class="navelem"><a class="el" href="classspringball_1_1brownian.html">brownian</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacespringball.html">springball</a></li><li class="navelem"><a class="el" href="classspringball_1_1brownian.html">brownian</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classspringball_1_1brownian-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">springball::brownian Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Brownian stochastic force.  
+ <a href="classspringball_1_1brownian.html#details">More...</a></p>
 
 <p><code>#include &lt;ballset.h&gt;</code></p>
 <table class="memberdecls">
@@ -98,9 +102,19 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a8a34c8494a19d4c352da24fa89ff0901"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1brownian.html#a8a34c8494a19d4c352da24fa89ff0901">implicit</a> = false</td></tr>
 <tr class="separator:a8a34c8494a19d4c352da24fa89ff0901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3c1be11bdb134dec6963c6c9269c8718"><td class="memItemLeft" align="right" valign="top">ForceStrength&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1brownian.html#a3c1be11bdb134dec6963c6c9269c8718">strength</a> {0.0, 0.0, 0.0}</td></tr>
+<tr class="separator:a3c1be11bdb134dec6963c6c9269c8718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d2f9384228d5f8d5c9df9286158dfa"><td class="memItemLeft" align="right" valign="top">Damping&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1brownian.html#a23d2f9384228d5f8d5c9df9286158dfa">lambda</a> {0.0}</td></tr>
+<tr class="separator:a23d2f9384228d5f8d5c9df9286158dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ddbb4f53a78f4cb113d3b210b4979a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1brownian.html#a5ddbb4f53a78f4cb113d3b210b4979a7">active</a> = true</td></tr>
+<tr class="separator:a5ddbb4f53a78f4cb113d3b210b4979a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Brownian motion with damping (i.e. implements Langevin equation) </p>
+<div class="textblock"><p >Brownian stochastic force. </p>
+<p >Brownian motion with damping (i.e. implements Langevin equation) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Remove damping in favour of explicit viscosity step? </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af42d7f8f270cfa7960f3a2c3af3d8442" name="af42d7f8f270cfa7960f3a2c3af3d8442"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af42d7f8f270cfa7960f3a2c3af3d8442">&#9670;&nbsp;</a></span>disable()</h2>
@@ -313,6 +327,29 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5ddbb4f53a78f4cb113d3b210b4979a7" name="a5ddbb4f53a78f4cb113d3b210b4979a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ddbb4f53a78f4cb113d3b210b4979a7">&#9670;&nbsp;</a></span>active</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool springball::brownian::active = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Whether force currently active </p>
+
+</div>
+</div>
 <a id="a8a34c8494a19d4c352da24fa89ff0901" name="a8a34c8494a19d4c352da24fa89ff0901"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a34c8494a19d4c352da24fa89ff0901">&#9670;&nbsp;</a></span>implicit</h2>
 
@@ -333,6 +370,52 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >Whether force is implicit </p>
+
+</div>
+</div>
+<a id="a23d2f9384228d5f8d5c9df9286158dfa" name="a23d2f9384228d5f8d5c9df9286158dfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d2f9384228d5f8d5c9df9286158dfa">&#9670;&nbsp;</a></span>lambda</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Damping springball::brownian::lambda {0.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Damping constant </p>
+
+</div>
+</div>
+<a id="a3c1be11bdb134dec6963c6c9269c8718" name="a3c1be11bdb134dec6963c6c9269c8718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c1be11bdb134dec6963c6c9269c8718">&#9670;&nbsp;</a></span>strength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ForceStrength springball::brownian::strength {0.0, 0.0, 0.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Strength of force </p>
 
 </div>
 </div>

@@ -63,17 +63,21 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>springball</b></li><li class="navelem"><a class="el" href="classspringball_1_1ejection.html">ejection</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacespringball.html">springball</a></li><li class="navelem"><a class="el" href="classspringball_1_1ejection.html">ejection</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classspringball_1_1ejection-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">springball::ejection Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>An "ejection" force.  
+ <a href="classspringball_1_1ejection.html#details">More...</a></p>
 
 <p><code>#include &lt;ballset.h&gt;</code></p>
 <table class="memberdecls">
@@ -98,9 +102,19 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ae3a5ae65ce96a088864cfd883f7a3532"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1ejection.html#ae3a5ae65ce96a088864cfd883f7a3532">implicit</a> = false</td></tr>
 <tr class="separator:ae3a5ae65ce96a088864cfd883f7a3532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae57b75e7afc044c2741b13bd084fa270"><td class="memItemLeft" align="right" valign="top">Position *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1ejection.html#ae57b75e7afc044c2741b13bd084fa270">target</a> = nullptr</td></tr>
+<tr class="separator:ae57b75e7afc044c2741b13bd084fa270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e84fd63c4ddd6c08146f314605617a"><td class="memItemLeft" align="right" valign="top">EjectionForce&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1ejection.html#a14e84fd63c4ddd6c08146f314605617a">strength</a> {1.0}</td></tr>
+<tr class="separator:a14e84fd63c4ddd6c08146f314605617a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bfdc77083c4ecac0d9453e5585340db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1ejection.html#a0bfdc77083c4ecac0d9453e5585340db">active</a> = true</td></tr>
+<tr class="separator:a0bfdc77083c4ecac0d9453e5585340db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >An "ejection" force - radially outwards from a target position with 1/r strength. Position is held as pointer so we can grab this from elsewhere </p>
+<div class="textblock"><p >An "ejection" force. </p>
+<p >A force directed radially outwards from a target position with 1/r strength. Position is held as pointer so it will track a given entity. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a774a34ea1f71eced30bcd854c5f318d1" name="a774a34ea1f71eced30bcd854c5f318d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a774a34ea1f71eced30bcd854c5f318d1">&#9670;&nbsp;</a></span>disable()</h2>
@@ -313,6 +327,29 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a0bfdc77083c4ecac0d9453e5585340db" name="a0bfdc77083c4ecac0d9453e5585340db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bfdc77083c4ecac0d9453e5585340db">&#9670;&nbsp;</a></span>active</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool springball::ejection::active = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Whether force should be applied or no-op </p>
+
+</div>
+</div>
 <a id="ae3a5ae65ce96a088864cfd883f7a3532" name="ae3a5ae65ce96a088864cfd883f7a3532"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae3a5ae65ce96a088864cfd883f7a3532">&#9670;&nbsp;</a></span>implicit</h2>
 
@@ -333,6 +370,52 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >Whether force is implicit </p>
+
+</div>
+</div>
+<a id="a14e84fd63c4ddd6c08146f314605617a" name="a14e84fd63c4ddd6c08146f314605617a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e84fd63c4ddd6c08146f314605617a">&#9670;&nbsp;</a></span>strength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EjectionForce springball::ejection::strength {1.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Strength of force </p>
+
+</div>
+</div>
+<a id="ae57b75e7afc044c2741b13bd084fa270" name="ae57b75e7afc044c2741b13bd084fa270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57b75e7afc044c2741b13bd084fa270">&#9670;&nbsp;</a></span>target</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Position* springball::ejection::target = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Position of target </p>
 
 </div>
 </div>

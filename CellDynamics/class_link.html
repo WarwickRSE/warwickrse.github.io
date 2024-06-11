@@ -65,6 +65,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_link-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Link Class Reference</div></div>
@@ -87,9 +88,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afd86d0120eda59fc6b169920141fe7c3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_link.html#afd86d0120eda59fc6b169920141fe7c3">mt_index</a> () const</td></tr>
 <tr class="separator:afd86d0120eda59fc6b169920141fe7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa7cc54d9883ad909903d6037059091cf"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; size_t, bool, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_link.html#aa7cc54d9883ad909903d6037059091cf">link</a></td></tr>
+<tr class="separator:aa7cc54d9883ad909903d6037059091cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ae5fb5ca86a0da469f25fa0a6fba5364e"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_link.html#ae5fb5ca86a0da469f25fa0a6fba5364e">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_link.html">Link</a> &amp;link)</td></tr>
+<tr class="memitem:ae5fb5ca86a0da469f25fa0a6fba5364e"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_link.html#ae5fb5ca86a0da469f25fa0a6fba5364e">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_link.html">Link</a> &amp;<a class="el" href="class_link.html#aa7cc54d9883ad909903d6037059091cf">link</a>)</td></tr>
 <tr class="separator:ae5fb5ca86a0da469f25fa0a6fba5364e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -253,6 +259,30 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >Output the link</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa7cc54d9883ad909903d6037059091cf" name="aa7cc54d9883ad909903d6037059091cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7cc54d9883ad909903d6037059091cf">&#9670;&nbsp;</a></span>link</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt;size_t, bool, size_t&gt; Link::link</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p ><a class="el" href="class_link.html" title="A single KC-MT link.">Link</a> data. Format is: KC number, KC sub (true for FIRST), MT number </p>
 
 </div>
 </div>

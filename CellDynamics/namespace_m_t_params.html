@@ -74,267 +74,71 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a07ea5c2a89c65b4b6376051b96816b6b"><td class="memItemLeft" align="right" valign="top">const MassDensity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_t_params.html#a07ea5c2a89c65b4b6376051b96816b6b">mass_density</a> {3.0e-4}</td></tr>
+<tr class="memitem:a07ea5c2a89c65b4b6376051b96816b6b"><td class="memItemLeft" align="right" valign="top"><a id="a07ea5c2a89c65b4b6376051b96816b6b" name="a07ea5c2a89c65b4b6376051b96816b6b"></a>
+const MassDensity&#160;</td><td class="memItemRight" valign="bottom"><b>mass_density</b> {3.0e-4}</td></tr>
+<tr class="memdesc:a07ea5c2a89c65b4b6376051b96816b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mass per unit length for tubule. <br /></td></tr>
 <tr class="separator:a07ea5c2a89c65b4b6376051b96816b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c7fd75aeb8a7dd467022b27a7afc26b"><td class="memItemLeft" align="right" valign="top">const Length&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_t_params.html#a0c7fd75aeb8a7dd467022b27a7afc26b">refRestLength</a> {0.025}</td></tr>
+<tr class="memitem:a0c7fd75aeb8a7dd467022b27a7afc26b"><td class="memItemLeft" align="right" valign="top"><a id="a0c7fd75aeb8a7dd467022b27a7afc26b" name="a0c7fd75aeb8a7dd467022b27a7afc26b"></a>
+const Length&#160;</td><td class="memItemRight" valign="bottom"><b>refRestLength</b> {0.025}</td></tr>
+<tr class="memdesc:a0c7fd75aeb8a7dd467022b27a7afc26b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approx. length of MT segments. Set to approx. 1-200 balls per length initially. <br /></td></tr>
 <tr class="separator:a0c7fd75aeb8a7dd467022b27a7afc26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a633f7f759d28dc7357ad73ed8884ed35"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_t_params.html#a633f7f759d28dc7357ad73ed8884ed35">maxTipVariation</a> = 0.1</td></tr>
+<tr class="memitem:a633f7f759d28dc7357ad73ed8884ed35"><td class="memItemLeft" align="right" valign="top"><a id="a633f7f759d28dc7357ad73ed8884ed35" name="a633f7f759d28dc7357ad73ed8884ed35"></a>
+const double&#160;</td><td class="memItemRight" valign="bottom"><b>maxTipVariation</b> = 0.1</td></tr>
+<tr class="memdesc:a633f7f759d28dc7357ad73ed8884ed35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum fractional overextention AND/OR max overshortening of tip segment. <br /></td></tr>
 <tr class="separator:a633f7f759d28dc7357ad73ed8884ed35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab018370afbcd3391297216c4dddbbe1b"><td class="memItemLeft" align="right" valign="top">const Length&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_t_params.html#ab018370afbcd3391297216c4dddbbe1b">minLength</a> {0.1}</td></tr>
+<tr class="memitem:ab018370afbcd3391297216c4dddbbe1b"><td class="memItemLeft" align="right" valign="top"><a id="ab018370afbcd3391297216c4dddbbe1b" name="ab018370afbcd3391297216c4dddbbe1b"></a>
+const Length&#160;</td><td class="memItemRight" valign="bottom"><b>minLength</b> {0.1}</td></tr>
+<tr class="memdesc:ab018370afbcd3391297216c4dddbbe1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum length for MTs. <br /></td></tr>
 <tr class="separator:ab018370afbcd3391297216c4dddbbe1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a629abd068a51cf63d4f0feedd0b85cd1"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_t_params.html#a629abd068a51cf63d4f0feedd0b85cd1">min_balls</a> = (<a class="el" href="namespace_m_t_params.html#ab018370afbcd3391297216c4dddbbe1b">minLength</a>/<a class="el" href="namespace_m_t_params.html#a0c7fd75aeb8a7dd467022b27a7afc26b">refRestLength</a>).get() &gt; 5 ? (<a class="el" href="namespace_m_t_params.html#ab018370afbcd3391297216c4dddbbe1b">minLength</a>/<a class="el" href="namespace_m_t_params.html#a0c7fd75aeb8a7dd467022b27a7afc26b">refRestLength</a>).get() : 5</td></tr>
+<tr class="memitem:a629abd068a51cf63d4f0feedd0b85cd1"><td class="memItemLeft" align="right" valign="top"><a id="a629abd068a51cf63d4f0feedd0b85cd1" name="a629abd068a51cf63d4f0feedd0b85cd1"></a>
+const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_balls</b> = (<a class="el" href="namespace_m_t_params.html#ab018370afbcd3391297216c4dddbbe1b">minLength</a>/<a class="el" href="namespace_m_t_params.html#a0c7fd75aeb8a7dd467022b27a7afc26b">refRestLength</a>).get() &gt; 5 ? (<a class="el" href="namespace_m_t_params.html#ab018370afbcd3391297216c4dddbbe1b">minLength</a>/<a class="el" href="namespace_m_t_params.html#a0c7fd75aeb8a7dd467022b27a7afc26b">refRestLength</a>).get() : 5</td></tr>
+<tr class="memdesc:a629abd068a51cf63d4f0feedd0b85cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum number of balls in MT, absolute min of 5 (for implicit solver), otherwise set by the minLength above. <br /></td></tr>
 <tr class="separator:a629abd068a51cf63d4f0feedd0b85cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a289fe05da2a026e4d3d87843ae4f364b"><td class="memItemLeft" align="right" valign="top">const SpringConstant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_t_params.html#a289fe05da2a026e4d3d87843ae4f364b">springforce_strength</a> {1.0e16}</td></tr>
+<tr class="memitem:a289fe05da2a026e4d3d87843ae4f364b"><td class="memItemLeft" align="right" valign="top"><a id="a289fe05da2a026e4d3d87843ae4f364b" name="a289fe05da2a026e4d3d87843ae4f364b"></a>
+const SpringConstant&#160;</td><td class="memItemRight" valign="bottom"><b>springforce_strength</b> {1.0e16}</td></tr>
+<tr class="memdesc:a289fe05da2a026e4d3d87843ae4f364b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strength of anti-bending force on tubule. <br /></td></tr>
 <tr class="separator:a289fe05da2a026e4d3d87843ae4f364b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24aa93a72b9796fb543f8c64d13aec18"><td class="memItemLeft" align="right" valign="top">const DampingPerLength&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_t_params.html#a24aa93a72b9796fb543f8c64d13aec18">viscous_damping</a> {5.0e8}</td></tr>
+<tr class="memitem:a24aa93a72b9796fb543f8c64d13aec18"><td class="memItemLeft" align="right" valign="top"><a id="a24aa93a72b9796fb543f8c64d13aec18" name="a24aa93a72b9796fb543f8c64d13aec18"></a>
+const DampingPerLength&#160;</td><td class="memItemRight" valign="bottom"><b>viscous_damping</b> {5.0e8}</td></tr>
+<tr class="memdesc:a24aa93a72b9796fb543f8c64d13aec18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Viscous drag per unit length for tubule (without X-sectional area) <br /></td></tr>
 <tr class="separator:a24aa93a72b9796fb543f8c64d13aec18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab69ae575b7ee46ccefc86bf3bd5bbbbe"><td class="memItemLeft" align="right" valign="top">const SpringConstant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_t_params.html#ab69ae575b7ee46ccefc86bf3bd5bbbbe">springtie_strength</a> {1.0e6}</td></tr>
+<tr class="memitem:ab69ae575b7ee46ccefc86bf3bd5bbbbe"><td class="memItemLeft" align="right" valign="top"><a id="ab69ae575b7ee46ccefc86bf3bd5bbbbe" name="ab69ae575b7ee46ccefc86bf3bd5bbbbe"></a>
+const SpringConstant&#160;</td><td class="memItemRight" valign="bottom"><b>springtie_strength</b> {1.0e6}</td></tr>
+<tr class="memdesc:ab69ae575b7ee46ccefc86bf3bd5bbbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spring constant of KC-MT spring (how close they follow each other - NOT the rupture strength) <br /></td></tr>
 <tr class="separator:ab69ae575b7ee46ccefc86bf3bd5bbbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2daa59da92bc89c7d1fefa301b348d8a"><td class="memItemLeft" align="right" valign="top">const ForceStrength&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_t_params.html#a2daa59da92bc89c7d1fefa301b348d8a">T_plus</a> {1.0}</td></tr>
+<tr class="memitem:a2daa59da92bc89c7d1fefa301b348d8a"><td class="memItemLeft" align="right" valign="top"><a id="a2daa59da92bc89c7d1fefa301b348d8a" name="a2daa59da92bc89c7d1fefa301b348d8a"></a>
+const ForceStrength&#160;</td><td class="memItemRight" valign="bottom"><b>T_plus</b> {1.0}</td></tr>
+<tr class="memdesc:a2daa59da92bc89c7d1fefa301b348d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tension-clock T_+. <br /></td></tr>
 <tr class="separator:a2daa59da92bc89c7d1fefa301b348d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee8558b94b1cd05a3c4f50153ec62867"><td class="memItemLeft" align="right" valign="top">const ForceStrength&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_t_params.html#aee8558b94b1cd05a3c4f50153ec62867">T_minus</a> {1.0}</td></tr>
+<tr class="memitem:aee8558b94b1cd05a3c4f50153ec62867"><td class="memItemLeft" align="right" valign="top"><a id="aee8558b94b1cd05a3c4f50153ec62867" name="aee8558b94b1cd05a3c4f50153ec62867"></a>
+const ForceStrength&#160;</td><td class="memItemRight" valign="bottom"><b>T_minus</b> {1.0}</td></tr>
+<tr class="memdesc:aee8558b94b1cd05a3c4f50153ec62867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tension-clock T_-. <br /></td></tr>
 <tr class="separator:aee8558b94b1cd05a3c4f50153ec62867"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb1bf1ab6f468f8ad97d27043c0b0473"><td class="memItemLeft" align="right" valign="top">const ForceStrengthRate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_t_params.html#aeb1bf1ab6f468f8ad97d27043c0b0473">alpha_plus</a> {0.1}</td></tr>
+<tr class="memitem:aeb1bf1ab6f468f8ad97d27043c0b0473"><td class="memItemLeft" align="right" valign="top"><a id="aeb1bf1ab6f468f8ad97d27043c0b0473" name="aeb1bf1ab6f468f8ad97d27043c0b0473"></a>
+const ForceStrengthRate&#160;</td><td class="memItemRight" valign="bottom"><b>alpha_plus</b> {0.1}</td></tr>
+<tr class="memdesc:aeb1bf1ab6f468f8ad97d27043c0b0473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tension-clock alpha_+. <br /></td></tr>
 <tr class="separator:aeb1bf1ab6f468f8ad97d27043c0b0473"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fcb738930e0ca654fe0f78c931dfd5f"><td class="memItemLeft" align="right" valign="top">const ForceStrengthRate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_t_params.html#a1fcb738930e0ca654fe0f78c931dfd5f">alpha_minus</a> {0.1}</td></tr>
+<tr class="memitem:a1fcb738930e0ca654fe0f78c931dfd5f"><td class="memItemLeft" align="right" valign="top"><a id="a1fcb738930e0ca654fe0f78c931dfd5f" name="a1fcb738930e0ca654fe0f78c931dfd5f"></a>
+const ForceStrengthRate&#160;</td><td class="memItemRight" valign="bottom"><b>alpha_minus</b> {0.1}</td></tr>
+<tr class="memdesc:a1fcb738930e0ca654fe0f78c931dfd5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tension-clock alpha_-. <br /></td></tr>
 <tr class="separator:a1fcb738930e0ca654fe0f78c931dfd5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7768482b45e25ad1dbc2d0198a50fb82"><td class="memItemLeft" align="right" valign="top">const ForceStrength&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_t_params.html#a7768482b45e25ad1dbc2d0198a50fb82">detachment_threshold</a> {30.0}</td></tr>
-<tr class="separator:a7768482b45e25ad1dbc2d0198a50fb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc25495b9f31570b49e90c7d14ce252b"><td class="memItemLeft" align="right" valign="top">const Speed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_t_params.html#adc25495b9f31570b49e90c7d14ce252b">refPolymerisationVelocity</a> {0.25}</td></tr>
+<tr class="memitem:a090d5aac06cdd77e9a3185ba26eaa1a1"><td class="memItemLeft" align="right" valign="top"><a id="a090d5aac06cdd77e9a3185ba26eaa1a1" name="a090d5aac06cdd77e9a3185ba26eaa1a1"></a>
+const ForceStrength&#160;</td><td class="memItemRight" valign="bottom"><b>refDetachmentThreshold</b> {30.0}</td></tr>
+<tr class="memdesc:a090d5aac06cdd77e9a3185ba26eaa1a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threshold force for detachment of KC (KC-MT tie rupture strength) <br /></td></tr>
+<tr class="separator:a090d5aac06cdd77e9a3185ba26eaa1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc25495b9f31570b49e90c7d14ce252b"><td class="memItemLeft" align="right" valign="top"><a id="adc25495b9f31570b49e90c7d14ce252b" name="adc25495b9f31570b49e90c7d14ce252b"></a>
+const Speed&#160;</td><td class="memItemRight" valign="bottom"><b>refPolymerisationVelocity</b> {0.25}</td></tr>
+<tr class="memdesc:adc25495b9f31570b49e90c7d14ce252b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default de-/polymerisation velocity. <br /></td></tr>
 <tr class="separator:adc25495b9f31570b49e90c7d14ce252b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa732e0c1ef19af6fabeed0e1c6ca2212"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_t_params.html#aa732e0c1ef19af6fabeed0e1c6ca2212">absoluteMaxFibresPerBundle</a> = 15</td></tr>
+<tr class="memitem:aa732e0c1ef19af6fabeed0e1c6ca2212"><td class="memItemLeft" align="right" valign="top"><a id="aa732e0c1ef19af6fabeed0e1c6ca2212" name="aa732e0c1ef19af6fabeed0e1c6ca2212"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>absoluteMaxFibresPerBundle</b> = 15</td></tr>
+<tr class="memdesc:aa732e0c1ef19af6fabeed0e1c6ca2212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hard limit on fibre count in a bundle. <br /></td></tr>
 <tr class="separator:aa732e0c1ef19af6fabeed0e1c6ca2212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Parameters for the Microtubules and attachments. </p>
 <p >Fixed values for properties of MTs, including their attachment to Kinetochores </p>
-</div><h2 class="groupheader">Variable Documentation</h2>
-<a id="aa732e0c1ef19af6fabeed0e1c6ca2212" name="aa732e0c1ef19af6fabeed0e1c6ca2212"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa732e0c1ef19af6fabeed0e1c6ca2212">&#9670;&nbsp;</a></span>absoluteMaxFibresPerBundle</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int MTParams::absoluteMaxFibresPerBundle = 15</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Hard limit on fibre count in a bundle </p>
-
-</div>
-</div>
-<a id="a1fcb738930e0ca654fe0f78c931dfd5f" name="a1fcb738930e0ca654fe0f78c931dfd5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fcb738930e0ca654fe0f78c931dfd5f">&#9670;&nbsp;</a></span>alpha_minus</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const ForceStrengthRate MTParams::alpha_minus {0.1}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Tension-clock alpha_- </p>
-
-</div>
-</div>
-<a id="aeb1bf1ab6f468f8ad97d27043c0b0473" name="aeb1bf1ab6f468f8ad97d27043c0b0473"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb1bf1ab6f468f8ad97d27043c0b0473">&#9670;&nbsp;</a></span>alpha_plus</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const ForceStrengthRate MTParams::alpha_plus {0.1}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Tension-clock alpha_+ </p>
-
-</div>
-</div>
-<a id="a7768482b45e25ad1dbc2d0198a50fb82" name="a7768482b45e25ad1dbc2d0198a50fb82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7768482b45e25ad1dbc2d0198a50fb82">&#9670;&nbsp;</a></span>detachment_threshold</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const ForceStrength MTParams::detachment_threshold {30.0}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Threshold force for detachment of KC (KC-MT tie rupture strength) </p>
-
-</div>
-</div>
-<a id="a07ea5c2a89c65b4b6376051b96816b6b" name="a07ea5c2a89c65b4b6376051b96816b6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07ea5c2a89c65b4b6376051b96816b6b">&#9670;&nbsp;</a></span>mass_density</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const MassDensity MTParams::mass_density {3.0e-4}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Mass per unit length for tubule </p>
-
-</div>
-</div>
-<a id="a633f7f759d28dc7357ad73ed8884ed35" name="a633f7f759d28dc7357ad73ed8884ed35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a633f7f759d28dc7357ad73ed8884ed35">&#9670;&nbsp;</a></span>maxTipVariation</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const double MTParams::maxTipVariation = 0.1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Maximum fractional overextention AND/OR max overshortening of tip segment </p>
-
-</div>
-</div>
-<a id="a629abd068a51cf63d4f0feedd0b85cd1" name="a629abd068a51cf63d4f0feedd0b85cd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a629abd068a51cf63d4f0feedd0b85cd1">&#9670;&nbsp;</a></span>min_balls</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const size_t MTParams::min_balls = (<a class="el" href="namespace_m_t_params.html#ab018370afbcd3391297216c4dddbbe1b">minLength</a>/<a class="el" href="namespace_m_t_params.html#a0c7fd75aeb8a7dd467022b27a7afc26b">refRestLength</a>).get() &gt; 5 ? (<a class="el" href="namespace_m_t_params.html#ab018370afbcd3391297216c4dddbbe1b">minLength</a>/<a class="el" href="namespace_m_t_params.html#a0c7fd75aeb8a7dd467022b27a7afc26b">refRestLength</a>).get() : 5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Minimum number of balls in MT, absolute min of 5 (for implicit solver), otherwise set by the minLength above </p>
-
-</div>
-</div>
-<a id="ab018370afbcd3391297216c4dddbbe1b" name="ab018370afbcd3391297216c4dddbbe1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab018370afbcd3391297216c4dddbbe1b">&#9670;&nbsp;</a></span>minLength</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const Length MTParams::minLength {0.1}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Minimum length for MTs </p>
-
-</div>
-</div>
-<a id="adc25495b9f31570b49e90c7d14ce252b" name="adc25495b9f31570b49e90c7d14ce252b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc25495b9f31570b49e90c7d14ce252b">&#9670;&nbsp;</a></span>refPolymerisationVelocity</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const Speed MTParams::refPolymerisationVelocity {0.25}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Default de-/polymerisation velocity </p>
-
-</div>
-</div>
-<a id="a0c7fd75aeb8a7dd467022b27a7afc26b" name="a0c7fd75aeb8a7dd467022b27a7afc26b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c7fd75aeb8a7dd467022b27a7afc26b">&#9670;&nbsp;</a></span>refRestLength</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const Length MTParams::refRestLength {0.025}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Approx. length of MT segments. Set to approx. 1-200 balls per length initially </p>
-
-</div>
-</div>
-<a id="a289fe05da2a026e4d3d87843ae4f364b" name="a289fe05da2a026e4d3d87843ae4f364b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a289fe05da2a026e4d3d87843ae4f364b">&#9670;&nbsp;</a></span>springforce_strength</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const SpringConstant MTParams::springforce_strength {1.0e16}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Strength of anti-bending force on tubule </p>
-
-</div>
-</div>
-<a id="ab69ae575b7ee46ccefc86bf3bd5bbbbe" name="ab69ae575b7ee46ccefc86bf3bd5bbbbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab69ae575b7ee46ccefc86bf3bd5bbbbe">&#9670;&nbsp;</a></span>springtie_strength</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const SpringConstant MTParams::springtie_strength {1.0e6}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Spring constant of KC-MT spring (how close they follow each other - NOT the rupture strength) </p>
-
-</div>
-</div>
-<a id="aee8558b94b1cd05a3c4f50153ec62867" name="aee8558b94b1cd05a3c4f50153ec62867"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee8558b94b1cd05a3c4f50153ec62867">&#9670;&nbsp;</a></span>T_minus</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const ForceStrength MTParams::T_minus {1.0}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Tension-clock T_- </p>
-
-</div>
-</div>
-<a id="a2daa59da92bc89c7d1fefa301b348d8a" name="a2daa59da92bc89c7d1fefa301b348d8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2daa59da92bc89c7d1fefa301b348d8a">&#9670;&nbsp;</a></span>T_plus</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const ForceStrength MTParams::T_plus {1.0}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Tension-clock T_+ </p>
-
-</div>
-</div>
-<a id="a24aa93a72b9796fb543f8c64d13aec18" name="a24aa93a72b9796fb543f8c64d13aec18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24aa93a72b9796fb543f8c64d13aec18">&#9670;&nbsp;</a></span>viscous_damping</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const DampingPerLength MTParams::viscous_damping {5.0e8}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Viscous drag per unit length for tubule (without X-sectional area) </p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3

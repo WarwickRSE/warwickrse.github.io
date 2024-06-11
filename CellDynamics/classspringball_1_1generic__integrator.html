@@ -63,12 +63,14 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>springball</b></li><li class="navelem"><a class="el" href="classspringball_1_1generic__integrator.html">generic_integrator</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacespringball.html">springball</a></li><li class="navelem"><a class="el" href="classspringball_1_1generic__integrator.html">generic_integrator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classspringball_1_1generic__integrator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">springball::generic_integrator&lt; forcetype &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -99,6 +101,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6b72b835eec5998a71e51f0da8bd6340"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d3a0ddcc1dfcc94010466d32884fd3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1generic__integrator.html#a6d3a0ddcc1dfcc94010466d32884fd3c">phase_two</a> (std::vector&lt; <a class="el" href="structspringball_1_1ball.html">ball</a> &gt; &amp;balls, Time dt, Time time)</td></tr>
 <tr class="separator:a6d3a0ddcc1dfcc94010466d32884fd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aefff8656e044908b0ef6087b4ae58aec"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:aefff8656e044908b0ef6087b4ae58aec"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classspringball_1_1generic__integrator.html#aefff8656e044908b0ef6087b4ae58aec">implicit_count_all</a> ()</td></tr>
+<tr class="separator:aefff8656e044908b0ef6087b4ae58aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102260ff1dd05a173446397168eadfb1"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1generic__integrator.html#a102260ff1dd05a173446397168eadfb1">has_implicit_force</a> ()</td></tr>
+<tr class="separator:a102260ff1dd05a173446397168eadfb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab8d79375806451712ae112b96f3c5fad"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; forcetype... &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1generic__integrator.html#ab8d79375806451712ae112b96f3c5fad">forces</a></td></tr>
+<tr class="separator:ab8d79375806451712ae112b96f3c5fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename ... forcetype&gt;<br />
@@ -297,6 +312,64 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a102260ff1dd05a173446397168eadfb1" name="a102260ff1dd05a173446397168eadfb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102260ff1dd05a173446397168eadfb1">&#9670;&nbsp;</a></span>has_implicit_force()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... forcetype&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="classspringball_1_1generic__integrator.html">springball::generic_integrator</a>&lt; forcetype &gt;::has_implicit_force </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Checking whether this integrator has any implicits </p>
+
+</div>
+</div>
+<a id="aefff8656e044908b0ef6087b4ae58aec" name="aefff8656e044908b0ef6087b4ae58aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefff8656e044908b0ef6087b4ae58aec">&#9670;&nbsp;</a></span>implicit_count_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... forcetype&gt; </div>
+<div class="memtemplate">
+template&lt;typename... T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void <a class="el" href="classspringball_1_1generic__integrator.html">springball::generic_integrator</a>&lt; forcetype &gt;::implicit_count_all </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Template magic to ensure there is at most ONE implicit force </p>
+
+</div>
+</div>
 <a id="aa9691d9496ce6f2670866591400f9565" name="aa9691d9496ce6f2670866591400f9565"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9691d9496ce6f2670866591400f9565">&#9670;&nbsp;</a></span>operator()()</h2>
 
@@ -432,6 +505,32 @@ template&lt;typename ... forcetype&gt; </div>
 </div><div class="memdoc">
 <p >Calculate updated forces</p>
 <p >Evaluates all forces using their operator() function. This is a no-op for implicit forces.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab8d79375806451712ae112b96f3c5fad" name="ab8d79375806451712ae112b96f3c5fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8d79375806451712ae112b96f3c5fad">&#9670;&nbsp;</a></span>forces</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... forcetype&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt;forcetype...&gt; <a class="el" href="classspringball_1_1generic__integrator.html">springball::generic_integrator</a>&lt; forcetype &gt;::forces</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Forces for this object </p>
 
 </div>
 </div>

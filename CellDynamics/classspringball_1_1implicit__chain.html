@@ -63,13 +63,14 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>springball</b></li><li class="navelem"><a class="el" href="classspringball_1_1implicit__chain.html">implicit_chain</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacespringball.html">springball</a></li><li class="navelem"><a class="el" href="classspringball_1_1implicit__chain.html">implicit_chain</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classspringball_1_1implicit__chain-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">springball::implicit_chain Class Reference</div></div>
 </div><!--header-->
@@ -82,8 +83,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae1b1e42493e3e8895fe2ad0608e1e81c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1implicit__chain.html#ae1b1e42493e3e8895fe2ad0608e1e81c">init</a> (penta_repeating &amp;imat, Length iseg_len, double alpha_in, int fixed_balls_in)</td></tr>
-<tr class="separator:ae1b1e42493e3e8895fe2ad0608e1e81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9bcd7bc67ffd4d5f5893b8db2128711"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1implicit__chain.html#aa9bcd7bc67ffd4d5f5893b8db2128711">init</a> (penta_repeating &amp;imat, Length iseg_len, Damping alpha_in, int fixed_balls_in)</td></tr>
+<tr class="separator:aa9bcd7bc67ffd4d5f5893b8db2128711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4372814f800339bb27890482abe2993"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1implicit__chain.html#aa4372814f800339bb27890482abe2993">verify</a> (penta_repeating &amp;imat)</td></tr>
 <tr class="separator:aa4372814f800339bb27890482abe2993"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3480c73e3afc5bdc307681c891084cfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1implicit__chain.html#a3480c73e3afc5bdc307681c891084cfd">nudge_array_len</a> (penta_repeating &amp;imat)</td></tr>
@@ -97,6 +98,17 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a8b564eb532c943722a9e98faf2871a2f"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1implicit__chain.html#a8b564eb532c943722a9e98faf2871a2f">implicit</a> = true</td></tr>
 <tr class="separator:a8b564eb532c943722a9e98faf2871a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab1daf65ad2f79634642fb5f6bb4d43ad"><td class="memItemLeft" align="right" valign="top">penta_thomas_solver&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1implicit__chain.html#ab1daf65ad2f79634642fb5f6bb4d43ad">solver</a></td></tr>
+<tr class="separator:ab1daf65ad2f79634642fb5f6bb4d43ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7111007edcf12afd804dbf59a340cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1implicit__chain.html#afd7111007edcf12afd804dbf59a340cc">fixed_balls</a> = 0</td></tr>
+<tr class="separator:afd7111007edcf12afd804dbf59a340cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4503255b30e466784eb4c91f1f0dce1a"><td class="memItemLeft" align="right" valign="top">Damping&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1implicit__chain.html#a4503255b30e466784eb4c91f1f0dce1a">alpha</a> {1.0}</td></tr>
+<tr class="separator:a4503255b30e466784eb4c91f1f0dce1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a577a6796770a11dc0e73a7384ed5792f"><td class="memItemLeft" align="right" valign="top">Length&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1implicit__chain.html#a577a6796770a11dc0e73a7384ed5792f">seg_len</a> {1.0}</td></tr>
+<tr class="separator:a577a6796770a11dc0e73a7384ed5792f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Implicit ball-rod force. </p>
@@ -142,11 +154,12 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >Apply the force</p>
+<p >Uses units where possible, for instance to ensure that the RHS is a ForceStrength, but the solver is dimensionless and we want to minimise copying, so we compromise by keeping units for as long as possible, trying to use "get" not "unsafeGet" where possible.</p>
 
 </div>
 </div>
-<a id="ae1b1e42493e3e8895fe2ad0608e1e81c" name="ae1b1e42493e3e8895fe2ad0608e1e81c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1b1e42493e3e8895fe2ad0608e1e81c">&#9670;&nbsp;</a></span>init()</h2>
+<a id="aa9bcd7bc67ffd4d5f5893b8db2128711" name="aa9bcd7bc67ffd4d5f5893b8db2128711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9bcd7bc67ffd4d5f5893b8db2128711">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,7 +182,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">Damping&#160;</td>
           <td class="paramname"><em>alpha_in</em>, </td>
         </tr>
         <tr>
@@ -297,6 +310,52 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4503255b30e466784eb4c91f1f0dce1a" name="a4503255b30e466784eb4c91f1f0dce1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4503255b30e466784eb4c91f1f0dce1a">&#9670;&nbsp;</a></span>alpha</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Damping springball::implicit_chain::alpha {1.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Vicosity coefficient </p>
+
+</div>
+</div>
+<a id="afd7111007edcf12afd804dbf59a340cc" name="afd7111007edcf12afd804dbf59a340cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7111007edcf12afd804dbf59a340cc">&#9670;&nbsp;</a></span>fixed_balls</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int springball::implicit_chain::fixed_balls = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Number of fixed balls at root end </p>
+
+</div>
+</div>
 <a id="a8b564eb532c943722a9e98faf2871a2f" name="a8b564eb532c943722a9e98faf2871a2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b564eb532c943722a9e98faf2871a2f">&#9670;&nbsp;</a></span>implicit</h2>
 
@@ -317,6 +376,52 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >Whether force is implcit </p>
+
+</div>
+</div>
+<a id="a577a6796770a11dc0e73a7384ed5792f" name="a577a6796770a11dc0e73a7384ed5792f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a577a6796770a11dc0e73a7384ed5792f">&#9670;&nbsp;</a></span>seg_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Length springball::implicit_chain::seg_len {1.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >"Restlength" of a single polymer segment </p>
+
+</div>
+</div>
+<a id="ab1daf65ad2f79634642fb5f6bb4d43ad" name="ab1daf65ad2f79634642fb5f6bb4d43ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1daf65ad2f79634642fb5f6bb4d43ad">&#9670;&nbsp;</a></span>solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">penta_thomas_solver springball::implicit_chain::solver</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >The solver </p>
 
 </div>
 </div>

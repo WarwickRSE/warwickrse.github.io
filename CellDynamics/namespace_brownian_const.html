@@ -75,33 +75,25 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:abfc90b291d730a8082816ec392576ee9"><td class="memItemLeft" align="right" valign="top">const Damping&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_brownian_const.html#abfc90b291d730a8082816ec392576ee9">lambda</a> {0.01}</td></tr>
+<tr class="memdesc:abfc90b291d730a8082816ec392576ee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Damping value.  <a href="namespace_brownian_const.html#abfc90b291d730a8082816ec392576ee9">More...</a><br /></td></tr>
 <tr class="separator:abfc90b291d730a8082816ec392576ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad60bd44a360a2eeb7bc817a51ca253b3"><td class="memItemLeft" align="right" valign="top">const ForceStrength&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_brownian_const.html#ad60bd44a360a2eeb7bc817a51ca253b3">strength</a> {0.0}</td></tr>
+<tr class="memitem:ad60bd44a360a2eeb7bc817a51ca253b3"><td class="memItemLeft" align="right" valign="top"><a id="ad60bd44a360a2eeb7bc817a51ca253b3" name="ad60bd44a360a2eeb7bc817a51ca253b3"></a>
+const ForceStrength&#160;</td><td class="memItemRight" valign="bottom"><b>strength</b> {0.0}</td></tr>
+<tr class="memdesc:ad60bd44a360a2eeb7bc817a51ca253b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overall strength. <br /></td></tr>
 <tr class="separator:ad60bd44a360a2eeb7bc817a51ca253b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af89eda126ea4fd0c1f10ae517945a08f"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_brownian_const.html#af89eda126ea4fd0c1f10ae517945a08f">kBT</a> = 1.0</td></tr>
+<tr class="memitem:af89eda126ea4fd0c1f10ae517945a08f"><td class="memItemLeft" align="right" valign="top"><a id="af89eda126ea4fd0c1f10ae517945a08f" name="af89eda126ea4fd0c1f10ae517945a08f"></a>
+const double&#160;</td><td class="memItemRight" valign="bottom"><b>kBT</b> = 1.0</td></tr>
+<tr class="memdesc:af89eda126ea4fd0c1f10ae517945a08f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference value for K_Boltzman T. <br /></td></tr>
 <tr class="separator:af89eda126ea4fd0c1f10ae517945a08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd6c0026df488c56fdafa8fa9f887da0"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_brownian_const.html#abd6c0026df488c56fdafa8fa9f887da0">sqrt2kBT</a> = sqrt(2.0) * <a class="el" href="namespace_brownian_const.html#af89eda126ea4fd0c1f10ae517945a08f">kBT</a></td></tr>
+<tr class="memitem:abd6c0026df488c56fdafa8fa9f887da0"><td class="memItemLeft" align="right" valign="top"><a id="abd6c0026df488c56fdafa8fa9f887da0" name="abd6c0026df488c56fdafa8fa9f887da0"></a>
+const double&#160;</td><td class="memItemRight" valign="bottom"><b>sqrt2kBT</b> = sqrt(2.0) * <a class="el" href="namespace_brownian_const.html#af89eda126ea4fd0c1f10ae517945a08f">kBT</a></td></tr>
+<tr class="memdesc:abd6c0026df488c56fdafa8fa9f887da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">For efficiency, combined constants. <br /></td></tr>
 <tr class="separator:abd6c0026df488c56fdafa8fa9f887da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Parameters for Brownian motion. </p>
-<p >Parameters to Langevin equation </p>
+<p >Parameters to Langevin equation for simulation objects. Note that viscous damping should also be included, but this is per object </p>
 </div><h2 class="groupheader">Variable Documentation</h2>
-<a id="af89eda126ea4fd0c1f10ae517945a08f" name="af89eda126ea4fd0c1f10ae517945a08f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af89eda126ea4fd0c1f10ae517945a08f">&#9670;&nbsp;</a></span>kBT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const double BrownianConst::kBT = 1.0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Reference value for K_Boltzman T </p>
-
-</div>
-</div>
 <a id="abfc90b291d730a8082816ec392576ee9" name="abfc90b291d730a8082816ec392576ee9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abfc90b291d730a8082816ec392576ee9">&#9670;&nbsp;</a></span>lambda</h2>
 
@@ -113,37 +105,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Damping value </p>
 
-</div>
-</div>
-<a id="abd6c0026df488c56fdafa8fa9f887da0" name="abd6c0026df488c56fdafa8fa9f887da0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd6c0026df488c56fdafa8fa9f887da0">&#9670;&nbsp;</a></span>sqrt2kBT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const double BrownianConst::sqrt2kBT = sqrt(2.0) * <a class="el" href="namespace_brownian_const.html#af89eda126ea4fd0c1f10ae517945a08f">kBT</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >For efficiency, combined constants </p>
-
-</div>
-</div>
-<a id="ad60bd44a360a2eeb7bc817a51ca253b3" name="ad60bd44a360a2eeb7bc817a51ca253b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad60bd44a360a2eeb7bc817a51ca253b3">&#9670;&nbsp;</a></span>strength</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const ForceStrength BrownianConst::strength {0.0}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Overall strength </p>
+<p>Damping value. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Delete - redundant </dd></dl>
 
 </div>
 </div>

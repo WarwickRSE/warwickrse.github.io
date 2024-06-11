@@ -63,17 +63,21 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>springball</b></li><li class="navelem"><a class="el" href="classspringball_1_1springforce__linear.html">springforce_linear</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacespringball.html">springball</a></li><li class="navelem"><a class="el" href="classspringball_1_1springforce__linear.html">springforce_linear</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classspringball_1_1springforce__linear-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">springball::springforce_linear Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A simple Hooke linear spring.  
+ <a href="classspringball_1_1springforce__linear.html#details">More...</a></p>
 
 <p><code>#include &lt;ballset.h&gt;</code></p>
 <table class="memberdecls">
@@ -96,9 +100,21 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:afec03d34e056131e681e1609825e5ddc"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1springforce__linear.html#afec03d34e056131e681e1609825e5ddc">implicit</a> = false</td></tr>
 <tr class="separator:afec03d34e056131e681e1609825e5ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a49ca11c9bd2b55ac058dae0bcaaba4fd"><td class="memItemLeft" align="right" valign="top">SpringConstant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1springforce__linear.html#a49ca11c9bd2b55ac058dae0bcaaba4fd">spring</a> {0.0}</td></tr>
+<tr class="separator:a49ca11c9bd2b55ac058dae0bcaaba4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033f2955ee6c7f9cd2cd6cc6a98c27ee"><td class="memItemLeft" align="right" valign="top">Damping&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1springforce__linear.html#a033f2955ee6c7f9cd2cd6cc6a98c27ee">damp</a> {0.0}</td></tr>
+<tr class="separator:a033f2955ee6c7f9cd2cd6cc6a98c27ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e927fbc34ae4eaeb4e66cb0e319748"><td class="memItemLeft" align="right" valign="top">Length&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1springforce__linear.html#a70e927fbc34ae4eaeb4e66cb0e319748">restlength</a> {1.0}</td></tr>
+<tr class="separator:a70e927fbc34ae4eaeb4e66cb0e319748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2926fa432f90aa03d242e446d8ad70"><td class="memItemLeft" align="right" valign="top">ForceStrength&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1springforce__linear.html#a2e2926fa432f90aa03d242e446d8ad70">tension</a> {0.0}</td></tr>
+<tr class="separator:a2e2926fa432f90aa03d242e446d8ad70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Classic linear spring Force entity with damping </p>
+<div class="textblock"><p >A simple Hooke linear spring. </p>
+<p >Spring force with restlength and damping </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aafcbd706e3bf49de7f944cb090e9036c" name="aafcbd706e3bf49de7f944cb090e9036c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aafcbd706e3bf49de7f944cb090e9036c">&#9670;&nbsp;</a></span>get_damping_const()</h2>
@@ -299,6 +315,29 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a033f2955ee6c7f9cd2cd6cc6a98c27ee" name="a033f2955ee6c7f9cd2cd6cc6a98c27ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a033f2955ee6c7f9cd2cd6cc6a98c27ee">&#9670;&nbsp;</a></span>damp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Damping springball::springforce_linear::damp {0.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Damping </p>
+
+</div>
+</div>
 <a id="afec03d34e056131e681e1609825e5ddc" name="afec03d34e056131e681e1609825e5ddc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afec03d34e056131e681e1609825e5ddc">&#9670;&nbsp;</a></span>implicit</h2>
 
@@ -319,6 +358,75 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >Whether force is implicit </p>
+
+</div>
+</div>
+<a id="a70e927fbc34ae4eaeb4e66cb0e319748" name="a70e927fbc34ae4eaeb4e66cb0e319748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e927fbc34ae4eaeb4e66cb0e319748">&#9670;&nbsp;</a></span>restlength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Length springball::springforce_linear::restlength {1.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Restlength of spring </p>
+
+</div>
+</div>
+<a id="a49ca11c9bd2b55ac058dae0bcaaba4fd" name="a49ca11c9bd2b55ac058dae0bcaaba4fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49ca11c9bd2b55ac058dae0bcaaba4fd">&#9670;&nbsp;</a></span>spring</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SpringConstant springball::springforce_linear::spring {0.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Spring constant </p>
+
+</div>
+</div>
+<a id="a2e2926fa432f90aa03d242e446d8ad70" name="a2e2926fa432f90aa03d242e446d8ad70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e2926fa432f90aa03d242e446d8ad70">&#9670;&nbsp;</a></span>tension</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ForceStrength springball::springforce_linear::tension {0.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Tension in spring </p>
 
 </div>
 </div>

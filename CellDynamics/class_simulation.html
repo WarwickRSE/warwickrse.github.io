@@ -65,6 +65,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_simulation-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Simulation Class Reference</div></div>
 </div><!--header-->
@@ -77,21 +79,98 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4431d7a302bae736f23bbfa22f2a116e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a4431d7a302bae736f23bbfa22f2a116e">Simulation</a> (<a class="el" href="struct_simulation_params.html">SimulationParams</a> SP)</td></tr>
+<tr class="memitem:a4431d7a302bae736f23bbfa22f2a116e"><td class="memItemLeft" align="right" valign="top"><a id="a4431d7a302bae736f23bbfa22f2a116e" name="a4431d7a302bae736f23bbfa22f2a116e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Simulation</b> (<a class="el" href="struct_simulation_params.html">SimulationParams</a> <a class="el" href="class_simulation.html#a0a8d2a94b81945ae0a640b46e2fbe917">SP</a>)</td></tr>
+<tr class="memdesc:a4431d7a302bae736f23bbfa22f2a116e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a simulation object with given parameters. <br /></td></tr>
 <tr class="separator:a4431d7a302bae736f23bbfa22f2a116e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6c8d80139b0a51412d3d488ba5c32e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#ae6c8d80139b0a51412d3d488ba5c32e4">test_mt_dynamics</a> ()</td></tr>
 <tr class="separator:ae6c8d80139b0a51412d3d488ba5c32e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefd11f8800d1d398e678ad18b0bd4d66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#aefd11f8800d1d398e678ad18b0bd4d66">test_end_to_end</a> ()</td></tr>
 <tr class="separator:aefd11f8800d1d398e678ad18b0bd4d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19d4c52423525639dbb6ff09937dc687"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a19d4c52423525639dbb6ff09937dc687">standard_run</a> ()</td></tr>
-<tr class="separator:a19d4c52423525639dbb6ff09937dc687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac273455f12063de6fbbf62e805cc38da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#ac273455f12063de6fbbf62e805cc38da">standard_run</a> ()</td></tr>
+<tr class="separator:ac273455f12063de6fbbf62e805cc38da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a74679c9a7109aa62d24694f504af0d8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a74679c9a7109aa62d24694f504af0d8b">check_ns</a> ()</td></tr>
+<tr class="separator:a74679c9a7109aa62d24694f504af0d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f39408f0c4c1031eea13cc85c4f77e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#af5f39408f0c4c1031eea13cc85c4f77e">standard_setup</a> (<a class="el" href="classrng.html">dbl_uniform_rng</a> &amp;my_rng, size_t n_kcs)</td></tr>
+<tr class="separator:af5f39408f0c4c1031eea13cc85c4f77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad518febe875229799f79bd2fbb9b0799"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#ad518febe875229799f79bd2fbb9b0799">seed_rngs</a> ()</td></tr>
+<tr class="separator:ad518febe875229799f79bd2fbb9b0799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29dfe9754d3d56fffe66ef46df50fa0e"><td class="memItemLeft" align="right" valign="top">Time&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a29dfe9754d3d56fffe66ef46df50fa0e">get_timestep</a> ()</td></tr>
+<tr class="separator:a29dfe9754d3d56fffe66ef46df50fa0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac964e86dbbb171a354d4234e0a25efc1"><td class="memItemLeft" align="right" valign="top">Time&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#ac964e86dbbb171a354d4234e0a25efc1">get_dt_limit</a> (Time limit=<a class="el" href="namespace_norms.html#a7a82e7719ed737576f18847f220d60a4">Norms::defaultTimestep</a>)</td></tr>
+<tr class="separator:ac964e86dbbb171a354d4234e0a25efc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2171e6fa1f97ec574736d72ca20e34f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a2171e6fa1f97ec574736d72ca20e34f3">tick</a> (Time t, Time dt)</td></tr>
+<tr class="separator:a2171e6fa1f97ec574736d72ca20e34f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f5601cde4db70ff0958ae147934abb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#ad9f5601cde4db70ff0958ae147934abb">run</a> (Time &amp;dt, Time &amp;t)</td></tr>
+<tr class="separator:ad9f5601cde4db70ff0958ae147934abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8f6f3cd2d91d530165ac2abcf3f852"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a4e8f6f3cd2d91d530165ac2abcf3f852">addSpindle</a> (Position pos, Velocity vel, bool disable_forces=false)</td></tr>
+<tr class="separator:a4e8f6f3cd2d91d530165ac2abcf3f852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8f215bf08076933ece377d37bed8958"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#ad8f215bf08076933ece377d37bed8958">addKCPair</a> (Position pos, Velocity vel, Scalar alt_angle, Scalar azi_angle, bool disable_forces=false)</td></tr>
+<tr class="separator:ad8f215bf08076933ece377d37bed8958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb94dbd30482b38683cb1b1b4d2b5e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a7eb94dbd30482b38683cb1b1b4d2b5e3">addMT</a> (bool whichSpindle, Position loose_end_pos, Velocity centroid_vely, Time dt, bool startsPoly, bool disable_nontube_forces)</td></tr>
+<tr class="separator:a7eb94dbd30482b38683cb1b1b4d2b5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a499ca66d4fcdacad4543ba00f5676a5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_microtub.html">Microtubule</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a499ca66d4fcdacad4543ba00f5676a5b">getMT</a> (int index)</td></tr>
+<tr class="separator:a499ca66d4fcdacad4543ba00f5676a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45107988391c526efc3a3e948a876b26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a45107988391c526efc3a3e948a876b26">createMT</a> (int whichSpindle, <a class="el" href="class_k_c_p.html">KCPair</a> &amp;kc, iKC member, Time dt, <a class="el" href="classrng.html">dbl_uniform_rng</a> &amp;my_rng)</td></tr>
+<tr class="separator:a45107988391c526efc3a3e948a876b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4553edb1a560a33797ce01f8c1333a8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a4553edb1a560a33797ce01f8c1333a8b">createLink</a> (const size_t kc_index, const size_t mt_index, const iKC whichKC, Time t)</td></tr>
+<tr class="separator:a4553edb1a560a33797ce01f8c1333a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4c42bd486325dbfa44e89b9c7a7c05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_links.html#a26f45e7f440d55886f61514ac8a7158b">Links::iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#abd4c42bd486325dbfa44e89b9c7a7c05">breakLink</a> (const <a class="el" href="class_links.html#a26f45e7f440d55886f61514ac8a7158b">Links::iterator</a> &amp;the_link)</td></tr>
+<tr class="separator:abd4c42bd486325dbfa44e89b9c7a7c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85eede10346e789ec4cbac2c575e302d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a85eede10346e789ec4cbac2c575e302d">breakLink</a> (size_t link_num)</td></tr>
+<tr class="separator:a85eede10346e789ec4cbac2c575e302d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af95f290a140c3a104692f59922a4bac4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#af95f290a140c3a104692f59922a4bac4">dump_initial_config</a> ()</td></tr>
+<tr class="separator:af95f290a140c3a104692f59922a4bac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a83b5b1caa525bbe24c312e7bbb5b56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a2a83b5b1caa525bbe24c312e7bbb5b56">output</a> (int step, Time t, std::string fileprefix=&quot;data&quot;)</td></tr>
+<tr class="separator:a2a83b5b1caa525bbe24c312e7bbb5b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0a8d2a94b81945ae0a640b46e2fbe917"><td class="memItemLeft" align="right" valign="top"><a id="a0a8d2a94b81945ae0a640b46e2fbe917" name="a0a8d2a94b81945ae0a640b46e2fbe917"></a>
+std::vector&lt; <a class="el" href="class_spindle_t.html">Spindle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SP</b></td></tr>
+<tr class="memdesc:a0a8d2a94b81945ae0a640b46e2fbe917"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Spindles. See also <a class="el" href="class_simulation.html#a4e8f6f3cd2d91d530165ac2abcf3f852">Simulation::addSpindle</a>. <br /></td></tr>
+<tr class="separator:a0a8d2a94b81945ae0a640b46e2fbe917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af377e1d315fe949e9be335f30b6230b2"><td class="memItemLeft" align="right" valign="top"><a id="af377e1d315fe949e9be335f30b6230b2" name="af377e1d315fe949e9be335f30b6230b2"></a>
+std::vector&lt; <a class="el" href="class_k_c_p.html">KCPair</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>KCs</b></td></tr>
+<tr class="memdesc:af377e1d315fe949e9be335f30b6230b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_kinetochore.html" title="A single Kinetochore.">Kinetochore</a> pairs. See also <a class="el" href="class_simulation.html#ad8f215bf08076933ece377d37bed8958">Simulation::addKCPair</a>. <br /></td></tr>
+<tr class="separator:af377e1d315fe949e9be335f30b6230b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca2a7a847ad5765e9d529bf99641095"><td class="memItemLeft" align="right" valign="top"><a id="a2ca2a7a847ad5765e9d529bf99641095" name="a2ca2a7a847ad5765e9d529bf99641095"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>next_mt_index</b> =0</td></tr>
+<tr class="memdesc:a2ca2a7a847ad5765e9d529bf99641095"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID for the next MT to be created. <br /></td></tr>
+<tr class="separator:a2ca2a7a847ad5765e9d529bf99641095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29add53dea92c682ae30dd5cc7db0467"><td class="memItemLeft" align="right" valign="top"><a id="a29add53dea92c682ae30dd5cc7db0467" name="a29add53dea92c682ae30dd5cc7db0467"></a>
+std::map&lt; int, <a class="el" href="class_microtub.html">Microtubule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MTs</b></td></tr>
+<tr class="memdesc:a29add53dea92c682ae30dd5cc7db0467"><td class="mdescLeft">&#160;</td><td class="mdescRight">The set of MTs in simulation. <br /></td></tr>
+<tr class="separator:a29add53dea92c682ae30dd5cc7db0467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0626b503ce0ef938eaa47f07913446da"><td class="memItemLeft" align="right" valign="top"><a id="a0626b503ce0ef938eaa47f07913446da" name="a0626b503ce0ef938eaa47f07913446da"></a>
+<a class="el" href="class_links.html">Links</a>&#160;</td><td class="memItemRight" valign="bottom"><b>link_list</b> {<a class="el" href="class_simulation.html#af377e1d315fe949e9be335f30b6230b2">KCs</a>, <a class="el" href="class_simulation.html#a29add53dea92c682ae30dd5cc7db0467">MTs</a>}</td></tr>
+<tr class="memdesc:a0626b503ce0ef938eaa47f07913446da"><td class="mdescLeft">&#160;</td><td class="mdescRight">The set of <a class="el" href="class_links.html" title="Collection of links between KCs and MTs.">Links</a> between KCs and MTs. <br /></td></tr>
+<tr class="separator:a0626b503ce0ef938eaa47f07913446da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad627ea37121759a43f6fc0440bef623e"><td class="memItemLeft" align="right" valign="top"><a id="ad627ea37121759a43f6fc0440bef623e" name="ad627ea37121759a43f6fc0440bef623e"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>n_detachments</b> = 0</td></tr>
+<tr class="memdesc:ad627ea37121759a43f6fc0440bef623e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of detachments so far. <br /></td></tr>
+<tr class="separator:ad627ea37121759a43f6fc0440bef623e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63b08cfb8eea155e83959662cd18dc5"><td class="memItemLeft" align="right" valign="top"><a id="aa63b08cfb8eea155e83959662cd18dc5" name="aa63b08cfb8eea155e83959662cd18dc5"></a>
+<a class="el" href="struct_simulation_params.html">SimulationParams</a>&#160;</td><td class="memItemRight" valign="bottom"><b>params</b></td></tr>
+<tr class="memdesc:aa63b08cfb8eea155e83959662cd18dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal params set by input system. <br /></td></tr>
+<tr class="separator:aa63b08cfb8eea155e83959662cd18dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab48e61e5aa88355a6032132a5d7fafcb"><td class="memItemLeft" align="right" valign="top"><a id="ab48e61e5aa88355a6032132a5d7fafcb" name="ab48e61e5aa88355a6032132a5d7fafcb"></a>
+<a class="el" href="classrng.html">dbl_uniform_rng</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rng_sim_objs</b> {0.0, 1.0}</td></tr>
+<tr class="memdesc:ab48e61e5aa88355a6032132a5d7fafcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rng for initial setup. <br /></td></tr>
+<tr class="separator:ab48e61e5aa88355a6032132a5d7fafcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a044e0323e53e3938c2553332047b9ab3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrng.html">dbl_uniform_rng</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a044e0323e53e3938c2553332047b9ab3">rng_sim_runtime</a> {0.0, 1.0}</td></tr>
+<tr class="memdesc:a044e0323e53e3938c2553332047b9ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rng for runtime.  <a href="class_simulation.html#a044e0323e53e3938c2553332047b9ab3">More...</a><br /></td></tr>
+<tr class="separator:a044e0323e53e3938c2553332047b9ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A single realisation of a cell dynamics simulation. </p>
-<p >Owns all of the simulation entities and is responsible for creating, destroying and handling connections between them. This is also responsible for initial conditions, data output and time stepping. </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000005">Caveat:</a></b></dt><dd><a class="el" href="class_simulation.html" title="A single realisation of a cell dynamics simulation.">Simulation</a> SETUP will establish the Spindles and Kinetochores and AFTER SETUP COMPLETES these will never be deleted. It is therefore safe to refer into them using pointers/references elsewhere in the code. DO NOT write code which modifies the SP or KC vectors after setup completes. DO NOT write code which refers to Microtubules this way! They can be and are regularly added and destroyed, and thus cannot be assumed stationary in memory. </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4431d7a302bae736f23bbfa22f2a116e" name="a4431d7a302bae736f23bbfa22f2a116e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4431d7a302bae736f23bbfa22f2a116e">&#9670;&nbsp;</a></span>Simulation()</h2>
+<p >Owns all of the simulation entities and is responsible for creating, destroying and handling connections between them. This is also responsible for initial conditions, data output and time stepping. There are three run modes: <a class="el" href="class_simulation.html#ae6c8d80139b0a51412d3d488ba5c32e4">Simulation::test_mt_dynamics</a>, <a class="el" href="class_simulation.html#aefd11f8800d1d398e678ad18b0bd4d66">Simulation::test_end_to_end</a> and <a class="el" href="class_simulation.html#ac273455f12063de6fbbf62e805cc38da">Simulation::standard_run</a>, which setup and run the simulation in different ways. </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000005">Caveat:</a></b></dt><dd>Simulation SETUP will establish the Spindles and Kinetochores and AFTER SETUP COMPLETES these will never be deleted. It is therefore safe to refer into them using pointers/references elsewhere in the code. DO NOT write code which modifies the SP or KC vectors after setup completes. DO NOT write code which refers to Microtubules this way! They can be and are regularly added and destroyed, and thus cannot be assumed stationary in memory. </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad8f215bf08076933ece377d37bed8958" name="ad8f215bf08076933ece377d37bed8958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8f215bf08076933ece377d37bed8958">&#9670;&nbsp;</a></span>addKCPair()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -100,32 +179,650 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Simulation::Simulation </td>
+          <td class="memname">void Simulation::addKCPair </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_simulation_params.html">SimulationParams</a>&#160;</td>
-          <td class="paramname"><em>SP</em></td><td>)</td>
+          <td class="paramtype">Position&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Velocity&#160;</td>
+          <td class="paramname"><em>vel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Scalar&#160;</td>
+          <td class="paramname"><em>alt_angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Scalar&#160;</td>
+          <td class="paramname"><em>azi_angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>disable_forces</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Add a <a class="el" href="class_kinetochore.html" title="A single Kinetochore.">Kinetochore</a> pair to the simulation</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>Centroid position of new pair </td></tr>
+    <tr><td class="paramname">vel</td><td>Velocity of new pair </td></tr>
+    <tr><td class="paramname">alt_angle</td><td>Altitude angle of axis of new pair </td></tr>
+    <tr><td class="paramname">azi_angle</td><td>Azimuthal angle of axis of new pair </td></tr>
+    <tr><td class="paramname">disable_forces</td><td>Disable forces on this pair</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7eb94dbd30482b38683cb1b1b4d2b5e3" name="a7eb94dbd30482b38683cb1b1b4d2b5e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb94dbd30482b38683cb1b1b4d2b5e3">&#9670;&nbsp;</a></span>addMT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Simulation::addMT </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>whichSpindle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Position&#160;</td>
+          <td class="paramname"><em>loose_end_pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Velocity&#160;</td>
+          <td class="paramname"><em>centroid_vely</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Time&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>startsPoly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>disable_nontube_forces</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Add a Microtubule to the simulation</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">whichSpindle</td><td>Which spindle it originates from (dictates position of proximal end) </td></tr>
+    <tr><td class="paramname">loose_end_pos</td><td>Position of loose (other) end </td></tr>
+    <tr><td class="paramname">centroid_vely</td><td>Overall velocity of tubule (i.e. of all balls) </td></tr>
+    <tr><td class="paramname">dt</td><td>Time step (used for implicit integrator) </td></tr>
+    <tr><td class="paramname">startsPoly</td><td>Should this MT start polymerising? </td></tr>
+    <tr><td class="paramname">disable_nontube_forces</td><td>Should non-tubule forces be disabled on this tubule </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Index of new MT</dd></dl>
+
+</div>
+</div>
+<a id="a4e8f6f3cd2d91d530165ac2abcf3f852" name="a4e8f6f3cd2d91d530165ac2abcf3f852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e8f6f3cd2d91d530165ac2abcf3f852">&#9670;&nbsp;</a></span>addSpindle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Simulation::addSpindle </td>
+          <td>(</td>
+          <td class="paramtype">Position&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Velocity&#160;</td>
+          <td class="paramname"><em>vel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>disable_forces</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Create and add a Spindle point to the simulation</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>Position of new point </td></tr>
+    <tr><td class="paramname">vel</td><td>Velocity of new point </td></tr>
+    <tr><td class="paramname">disable_forces</td><td>Disable forces on this spindle</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abd4c42bd486325dbfa44e89b9c7a7c05" name="abd4c42bd486325dbfa44e89b9c7a7c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd4c42bd486325dbfa44e89b9c7a7c05">&#9670;&nbsp;</a></span>breakLink() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_links.html#a26f45e7f440d55886f61514ac8a7158b">Links::iterator</a> Simulation::breakLink </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_links.html#a26f45e7f440d55886f61514ac8a7158b">Links::iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>the_link</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Construct simulation object with given params. </p>
+<p >Break the given <a class="el" href="class_link.html" title="A single KC-MT link.">Link</a></p>
+<p >Detaches the Microtubule and <a class="el" href="class_kinetochore.html" title="A single Kinetochore.">Kinetochore</a> pair member, and removes the <a class="el" href="class_link.html" title="A single KC-MT link.">Link</a> from the list </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">the_link</td><td>Iterator to the <a class="el" href="class_link.html" title="A single KC-MT link.">Link</a> to break </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Iterator to the next <a class="el" href="class_link.html" title="A single KC-MT link.">Link</a> in the <a class="el" href="class_simulation.html#a0626b503ce0ef938eaa47f07913446da" title="The set of Links between KCs and MTs.">Simulation::link_list</a></dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a19d4c52423525639dbb6ff09937dc687" name="a19d4c52423525639dbb6ff09937dc687"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19d4c52423525639dbb6ff09937dc687">&#9670;&nbsp;</a></span>standard_run()</h2>
+<a id="a85eede10346e789ec4cbac2c575e302d" name="a85eede10346e789ec4cbac2c575e302d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85eede10346e789ec4cbac2c575e302d">&#9670;&nbsp;</a></span>breakLink() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t Simulation::breakLink </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>link_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Break the given numbered <a class="el" href="class_link.html" title="A single KC-MT link.">Link</a></p>
+<p >Breaks the link at the given position in the List, detaching the Microtubule and <a class="el" href="class_kinetochore.html" title="A single Kinetochore.">Kinetochore</a> pair member, and removing the <a class="el" href="class_link.html" title="A single KC-MT link.">Link</a> from the list </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">link_num</td><td>Position of the link to break </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Index of the next <a class="el" href="class_link.html" title="A single KC-MT link.">Link</a> in the <a class="el" href="class_simulation.html#a0626b503ce0ef938eaa47f07913446da" title="The set of Links between KCs and MTs.">Simulation::link_list</a> (note == link_num)</dd></dl>
+
+</div>
+</div>
+<a id="a74679c9a7109aa62d24694f504af0d8b" name="a74679c9a7109aa62d24694f504af0d8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74679c9a7109aa62d24694f504af0d8b">&#9670;&nbsp;</a></span>check_ns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Simulation::check_ns </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Debugging only: verify that length of SP and KCs has not changed after setup completed</p>
+
+</div>
+</div>
+<a id="a4553edb1a560a33797ce01f8c1333a8b" name="a4553edb1a560a33797ce01f8c1333a8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4553edb1a560a33797ce01f8c1333a8b">&#9670;&nbsp;</a></span>createLink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Simulation::createLink </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>kc_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>mt_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const iKC&#160;</td>
+          <td class="paramname"><em>whichKC</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Time&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p ><a class="el" href="class_link.html" title="A single KC-MT link.">Link</a> a Microtubule to a <a class="el" href="class_kinetochore.html" title="A single Kinetochore.">Kinetochore</a></p>
+<p ><a class="el" href="class_links.html" title="Collection of links between KCs and MTs.">Links</a> the given Microtubule to the given <a class="el" href="class_kinetochore.html" title="A single Kinetochore.">Kinetochore</a> pair member, and stores the linkage information </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kc_index</td><td>Index of the <a class="el" href="class_kinetochore.html" title="A single Kinetochore.">Kinetochore</a> to link to </td></tr>
+    <tr><td class="paramname">mt_index</td><td>Index of the Microtubule to link </td></tr>
+    <tr><td class="paramname">whichKC</td><td>Which member of the <a class="el" href="class_kinetochore.html" title="A single Kinetochore.">Kinetochore</a> pair to link to (i.e. iKC1 or iKC2) </td></tr>
+    <tr><td class="paramname">t</td><td>Current time</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a45107988391c526efc3a3e948a876b26" name="a45107988391c526efc3a3e948a876b26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45107988391c526efc3a3e948a876b26">&#9670;&nbsp;</a></span>createMT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Simulation::createMT </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>whichSpindle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_k_c_p.html">KCPair</a> &amp;&#160;</td>
+          <td class="paramname"><em>kc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">iKC&#160;</td>
+          <td class="paramname"><em>member</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Time&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classrng.html">dbl_uniform_rng</a> &amp;&#160;</td>
+          <td class="paramname"><em>my_rng</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Create a Microtubule</p>
+<p >Creates a Microtubule originating from the given spindle and passing by the given KC member</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">whichSpindle</td><td>Index of the spindle to originate from </td></tr>
+    <tr><td class="paramname">kc</td><td>Reference to the KCPair to attach to </td></tr>
+    <tr><td class="paramname">member</td><td>Which member of the KCPair to attach to (i.e. iKC::one or iKC::two) </td></tr>
+    <tr><td class="paramname">dt</td><td>Time step (needed by MT for internals) </td></tr>
+    <tr><td class="paramname">my_rng</td><td>Random number generator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Index of the created Microtubule</dd></dl>
+
+</div>
+</div>
+<a id="af95f290a140c3a104692f59922a4bac4" name="af95f290a140c3a104692f59922a4bac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af95f290a140c3a104692f59922a4bac4">&#9670;&nbsp;</a></span>dump_initial_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Simulation::dump_initial_config </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Output the initial data</p>
+<p >Outputs the initial configuration of the simulation to a file with the given prefix, ending "_initial.txt". This file is suitable for use as an input file for reproducing this run in the future, including random seeds</p>
+
+</div>
+</div>
+<a id="ac964e86dbbb171a354d4234e0a25efc1" name="ac964e86dbbb171a354d4234e0a25efc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac964e86dbbb171a354d4234e0a25efc1">&#9670;&nbsp;</a></span>get_dt_limit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Time Simulation::get_dt_limit </td>
+          <td>(</td>
+          <td class="paramtype">Time&#160;</td>
+          <td class="paramname"><em>limit</em> = <code><a class="el" href="namespace_norms.html#a7a82e7719ed737576f18847f220d60a4">Norms::defaultTimestep</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Get the maximum time step </p>
+
+</div>
+</div>
+<a id="a29dfe9754d3d56fffe66ef46df50fa0e" name="a29dfe9754d3d56fffe66ef46df50fa0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29dfe9754d3d56fffe66ef46df50fa0e">&#9670;&nbsp;</a></span>get_timestep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Time Simulation::get_timestep </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Get the timestep to use </p>
+
+</div>
+</div>
+<a id="a499ca66d4fcdacad4543ba00f5676a5b" name="a499ca66d4fcdacad4543ba00f5676a5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a499ca66d4fcdacad4543ba00f5676a5b">&#9670;&nbsp;</a></span>getMT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_microtub.html">Microtubule</a> &amp; Simulation::getMT </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Get reference to the numbered MT (helper function)</p>
+
+</div>
+</div>
+<a id="a2a83b5b1caa525bbe24c312e7bbb5b56" name="a2a83b5b1caa525bbe24c312e7bbb5b56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a83b5b1caa525bbe24c312e7bbb5b56">&#9670;&nbsp;</a></span>output()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Simulation::output </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Time&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>fileprefix</em> = <code>&quot;data&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Output data</p>
+<p >Output data for current step to file with given prefix. Full filename is fileprefix + stepnumber + ".txt"</p>
+<p >File format is as follows:</p>
+<p >Spindles</p>
+<p >Position Velocity</p>
+<p >...</p>
+<p >KCs</p>
+<p >Position Velocity (Member 1)</p>
+<p >Position Velocity (Member 2)</p>
+<p >...</p>
+<p >MTs</p>
+<p >Microtubule with N balls</p>
+<p >Position Velocity</p>
+<p >...</p>
+<p ><a class="el" href="class_links.html" title="Collection of links between KCs and MTs.">Links</a></p>
+<p >KC index, KC sub-element, MT index</p>
+<p >...</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">step</td><td>Current step number </td></tr>
+    <tr><td class="paramname">t</td><td>Current time </td></tr>
+    <tr><td class="paramname">fileprefix</td><td>Prefix for output file</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad9f5601cde4db70ff0958ae147934abb" name="ad9f5601cde4db70ff0958ae147934abb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9f5601cde4db70ff0958ae147934abb">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Simulation::run </td>
+          <td>(</td>
+          <td class="paramtype">Time &amp;&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Time &amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Run the simulation</p>
+<p >Combines the shared code in all modes to run the steps and handle the outputting. Will modify the time value as it runs</p>
+
+</div>
+</div>
+<a id="ad518febe875229799f79bd2fbb9b0799" name="ad518febe875229799f79bd2fbb9b0799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad518febe875229799f79bd2fbb9b0799">&#9670;&nbsp;</a></span>seed_rngs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Simulation::seed_rngs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Seed the random number generators </p>
+
+</div>
+</div>
+<a id="ac273455f12063de6fbbf62e805cc38da" name="ac273455f12063de6fbbf62e805cc38da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac273455f12063de6fbbf62e805cc38da">&#9670;&nbsp;</a></span>standard_run()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Simulation::standard_run </td>
+          <td class="memname">void Simulation::standard_run </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -144,7 +841,43 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of Microtubules at end of simulation (for testing purposes mainly)</dd></dl>
+
+</div>
+</div>
+<a id="af5f39408f0c4c1031eea13cc85c4f77e" name="af5f39408f0c4c1031eea13cc85c4f77e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f39408f0c4c1031eea13cc85c4f77e">&#9670;&nbsp;</a></span>standard_setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Simulation::standard_setup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrng.html">dbl_uniform_rng</a> &amp;&#160;</td>
+          <td class="paramname"><em>my_rng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n_kcs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Shared generic setup code </p>
 
 </div>
 </div>
@@ -181,6 +914,76 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >Run mode to test bending dynamics of a Microtubule </p>
+
+</div>
+</div>
+<a id="a2171e6fa1f97ec574736d72ca20e34f3" name="a2171e6fa1f97ec574736d72ca20e34f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2171e6fa1f97ec574736d72ca20e34f3">&#9670;&nbsp;</a></span>tick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Simulation::tick </td>
+          <td>(</td>
+          <td class="paramtype">Time&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Time&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Advance simulation by one time step</p>
+<p >Performs all of the dynamics, object interactions etc etc </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Current time </td></tr>
+    <tr><td class="paramname">dt</td><td>Time step</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a044e0323e53e3938c2553332047b9ab3" name="a044e0323e53e3938c2553332047b9ab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a044e0323e53e3938c2553332047b9ab3">&#9670;&nbsp;</a></span>rng_sim_runtime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrng.html">dbl_uniform_rng</a> Simulation::rng_sim_runtime {0.0, 1.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rng for runtime. </p>
+<p >Used for everything after the initial setup, including attachments, detachments etc but NOT Brownian motion </p>
 
 </div>
 </div>

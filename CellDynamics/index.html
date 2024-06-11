@@ -83,16 +83,16 @@ Building the code</h1>
 </ul>
 </li>
 <li>make testrun<ul>
-<li>A test run to check the dynamics of a single MT under a bending force. Exe is CellSim_mt</li>
+<li>A test run to check the dynamics of a single MT under a bending force. Exe is CellSim_mt. Must <code>make clean</code> between normal build and this one.</li>
 </ul>
 </li>
 <li>make endrun<ul>
 <li>An idealised setup with exactly 1 KC (regardless of init.txt), attached one side to each spindle point. Exe is CellSim_e2e</li>
 </ul>
 </li>
-<li>MODE=debug Extra output, NO optimisation</li>
+<li>MODE=debug Extra output, NO optimisation. Must <code>make clean</code> between normal build and this one.</li>
 <li>MODE=test<ul>
-<li>Like debug, but keeps O3 optimisation</li>
+<li>Like debug, but keeps O3 optimisation. Must <code>make clean</code> between normal build and this one.</li>
 </ul>
 </li>
 <li>FIXED_SEEDS=1<ul>
@@ -107,19 +107,23 @@ Building the code</h1>
 <li>Create tarball of all code files</li>
 </ul>
 </li>
+<li>make docs<ul>
+<li>Run Doxygen to create html docs</li>
+</ul>
+</li>
 </ul>
 <h1><a class="anchor" id="run_sec"></a>
 Running the code</h1>
 <p >The initial conditions are read from a file, by default init.txt. Supply a filename at the command line to override this.</p>
 <p >Parameters of the form "n_" are integers, those of the form "P_" are probabilities and must be in range [0,1] Some parameters have default values. A few are mandatory: namely a one of n_steps and t_end. The available parameters are:</p>
 <ul>
-<li>"polymerisation_speed" - Speed of Microtubule growth by polymerisation, default <a class="el" href="namespace_m_t_params.html#adc25495b9f31570b49e90c7d14ce252b">MTParams::refPolymerisationVelocity</a></li>
-<li>"depolymerisation_speed" Ditto for contraction, default <a class="el" href="namespace_m_t_params.html#adc25495b9f31570b49e90c7d14ce252b">MTParams::refPolymerisationVelocity</a></li>
-<li>"MTFieldAlpha" alpha parameter for the distribution of MTs around spindles, default <a class="el" href="namespace_m_t_field.html#a08398587e7c6d3b9dc0e6516dc0b5080">MTField::defaultAlpha</a></li>
-<li>"MTFieldCoeff" ditto but combined value of all leading terms, default <a class="el" href="namespace_m_t_field.html#a6d27054ad88ce43ba515e08cb25f1a19">MTField::defaultLeadingTerm</a></li>
+<li>"polymerisation_speed" - Speed of Microtubule growth by polymerisation, default <a class="el" href="namespace_m_t_params.html#adc25495b9f31570b49e90c7d14ce252b" title="Default de-/polymerisation velocity.">MTParams::refPolymerisationVelocity</a></li>
+<li>"depolymerisation_speed" Ditto for contraction, default <a class="el" href="namespace_m_t_params.html#adc25495b9f31570b49e90c7d14ce252b" title="Default de-/polymerisation velocity.">MTParams::refPolymerisationVelocity</a></li>
+<li>"MTFieldAlpha" alpha parameter for the distribution of MTs around spindles, default <a class="el" href="namespace_m_t_field.html#a08398587e7c6d3b9dc0e6516dc0b5080" title="Default alpha (exponential falloff)">MTField::defaultAlpha</a></li>
+<li>"MTFieldCoeff" ditto but combined value of all leading terms, default <a class="el" href="namespace_m_t_field.html#a6d27054ad88ce43ba515e08cb25f1a19" title="Default value for combination of all the rest.">MTField::defaultLeadingTerm</a></li>
 <li>"n_steps" number of timesteps to run. Overrides t_end. One of these must be set.</li>
 <li>"t_end" end time to run to</li>
-<li>"max_timestep" max value for timestep, used for e.g. convergence testing. Default <a class="el" href="namespace_norms.html#a7a82e7719ed737576f18847f220d60a4">Norms::defaultTimestep</a></li>
+<li>"max_timestep" max value for timestep, used for e.g. convergence testing. Default <a class="el" href="namespace_norms.html#a7a82e7719ed737576f18847f220d60a4" title="Default maximum timestep.">Norms::defaultTimestep</a></li>
 <li>"n_dumps" number of outputs to produce, default 10</li>
 <li>"name" name (prefix string) for output files, can include a path. Default "output"</li>
 <li>"n_kcs" Number of <a class="el" href="class_kinetochore.html" title="A single Kinetochore.">Kinetochore</a> pairs to create. Default 1</li>
@@ -128,9 +132,10 @@ Running the code</h1>
 <li>"simulation_seed" Seed for simulation setup. If not supplied, will be seeded from random device.</li>
 <li>"runtime_seed" Seed for runtime (e.g. attachment, detachment). If not supplied, will be seeded from random device.</li>
 <li>"brownian_seed" Seed for all Brownian motion. If not supplied, will be seeded from random device.</li>
-<li>"P_attach" <a class="el" href="struct_probability.html" title="A value in range [0,1].">Probability</a> of MT-KC attachment given encounter. Default <a class="el" href="namespace_m_t_field.html#af5055703af8e2c6791125045037a99fd">MTField::defaultP_attach</a></li>
-<li>"P_isPoly" <a class="el" href="struct_probability.html" title="A value in range [0,1].">Probability</a> that an MT is polymerising on creation. Default <a class="el" href="namespace_m_t_field.html#a85ceaba1c2ab991b81ad53b2ecf97638">MTField::isPolyProb</a></li>
-<li><p class="startli">"P_detach" <a class="el" href="struct_probability.html" title="A value in range [0,1].">Probability</a> of random detachment if running in a mode with the included. Default <a class="el" href="namespace_m_t_field.html#aff25cb2d08cbc1705f29ed31d905c736">MTField::defaultP_detach</a></p>
+<li>"P_attach" <a class="el" href="struct_probability.html" title="A value in range [0,1].">Probability</a> of MT-KC attachment given encounter. Default <a class="el" href="namespace_m_t_field.html#af5055703af8e2c6791125045037a99fd" title="Probability of attaching given encounter.">MTField::defaultP_attach</a></li>
+<li>"P_isPoly" <a class="el" href="struct_probability.html" title="A value in range [0,1].">Probability</a> that an MT is polymerising on creation. Default <a class="el" href="namespace_m_t_field.html#a85ceaba1c2ab991b81ad53b2ecf97638" title="Probability of MT starting as polymerising.">MTField::isPolyProb</a></li>
+<li>"P_detach" <a class="el" href="struct_probability.html" title="A value in range [0,1].">Probability</a> of random detachment if running in a mode with the included. Default <a class="el" href="namespace_m_t_field.html#aff25cb2d08cbc1705f29ed31d905c736" title="Probability of random detachment.">MTField::defaultP_detach</a></li>
+<li><p class="startli">"detachment_threshold" Magnitude of force at which detachment occurs. Default <a class="el" href="namespace_m_t_params.html#a090d5aac06cdd77e9a3185ba26eaa1a1" title="Threshold force for detachment of KC (KC-MT tie rupture strength)">MTParams::refDetachmentThreshold</a></p>
 <p class="startli">NOTE: in testrun and endrun modes, only certain inputs are used, and others will be ignored.</p>
 </li>
 </ul>

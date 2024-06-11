@@ -72,99 +72,40 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Struct for internal parameters of a spindle point.  
+ <a href="struct_spindle_internals.html#details">More...</a></p>
+
 <p><code>#include &lt;SharedStructs.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a42849243d340298e1e4efaa8063f2b74"><td class="memItemLeft" align="right" valign="top"><a id="a42849243d340298e1e4efaa8063f2b74" name="a42849243d340298e1e4efaa8063f2b74"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setValues</b> (const <a class="el" href="classinputs.html">inputs</a> &amp;init)</td></tr>
+<tr class="memdesc:a42849243d340298e1e4efaa8063f2b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the values from inputs. <br /></td></tr>
 <tr class="separator:a42849243d340298e1e4efaa8063f2b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a3bde4db38dc2ef9bd53d26bdf960e9e8"><td class="memItemLeft" align="right" valign="top">PerLength&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_spindle_internals.html#a3bde4db38dc2ef9bd53d26bdf960e9e8">MTFieldAlpha</a></td></tr>
+<tr class="memitem:a3bde4db38dc2ef9bd53d26bdf960e9e8"><td class="memItemLeft" align="right" valign="top"><a id="a3bde4db38dc2ef9bd53d26bdf960e9e8" name="a3bde4db38dc2ef9bd53d26bdf960e9e8"></a>
+PerLength&#160;</td><td class="memItemRight" valign="bottom"><b>MTFieldAlpha</b></td></tr>
+<tr class="memdesc:a3bde4db38dc2ef9bd53d26bdf960e9e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alpha parameter for MT field. <br /></td></tr>
 <tr class="separator:a3bde4db38dc2ef9bd53d26bdf960e9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a448b0e3053d7b39e8e4c255506ba4801"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_spindle_internals.html#a448b0e3053d7b39e8e4c255506ba4801">MTFieldCoeff</a></td></tr>
+<tr class="memitem:a448b0e3053d7b39e8e4c255506ba4801"><td class="memItemLeft" align="right" valign="top"><a id="a448b0e3053d7b39e8e4c255506ba4801" name="a448b0e3053d7b39e8e4c255506ba4801"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>MTFieldCoeff</b></td></tr>
+<tr class="memdesc:a448b0e3053d7b39e8e4c255506ba4801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Leading coefficient for MT field. <br /></td></tr>
 <tr class="separator:a448b0e3053d7b39e8e4c255506ba4801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a65a74b5e2e340badc84acbc179a6742d"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_spindle_internals.html#a65a74b5e2e340badc84acbc179a6742d">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="struct_spindle_internals.html">SpindleInternals</a> &amp;ins)</td></tr>
+<tr class="memitem:a65a74b5e2e340badc84acbc179a6742d"><td class="memItemLeft" align="right" valign="top"><a id="a65a74b5e2e340badc84acbc179a6742d" name="a65a74b5e2e340badc84acbc179a6742d"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, const <a class="el" href="struct_spindle_internals.html">SpindleInternals</a> &amp;ins)</td></tr>
+<tr class="memdesc:a65a74b5e2e340badc84acbc179a6742d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out the struct. <br /></td></tr>
 <tr class="separator:a65a74b5e2e340badc84acbc179a6742d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Struct for internal parameters of a spindle point</p>
+<div class="textblock"><p >Struct for internal parameters of a spindle point. </p>
 <p >All internal parameter structs: contain properties of simulation objects which can be set by the input system. This simplifies the setup, at slight cost of clarity, as the params are not directly set in the object constructors/available in the object definitions. </p>
-</div><h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a65a74b5e2e340badc84acbc179a6742d" name="a65a74b5e2e340badc84acbc179a6742d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65a74b5e2e340badc84acbc179a6742d">&#9670;&nbsp;</a></span>operator&lt;&lt;</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_spindle_internals.html">SpindleInternals</a> &amp;&#160;</td>
-          <td class="paramname"><em>ins</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Write out the struct</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3bde4db38dc2ef9bd53d26bdf960e9e8" name="a3bde4db38dc2ef9bd53d26bdf960e9e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bde4db38dc2ef9bd53d26bdf960e9e8">&#9670;&nbsp;</a></span>MTFieldAlpha</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PerLength SpindleInternals::MTFieldAlpha</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Alpha parameter for MT field </p>
-
-</div>
-</div>
-<a id="a448b0e3053d7b39e8e4c255506ba4801" name="a448b0e3053d7b39e8e4c255506ba4801"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a448b0e3053d7b39e8e4c255506ba4801">&#9670;&nbsp;</a></span>MTFieldCoeff</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double SpindleInternals::MTFieldCoeff</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Leading coefficient for MT field </p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/SharedStructs.h</li>
 </ul>
 </div><!-- contents -->

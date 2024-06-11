@@ -65,6 +65,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_microtub-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Microtub&lt; integrator_T, integrator_Tip &gt; Class Template Reference</div></div>
@@ -78,7 +80,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4de1f72d146be0a88580ad004008ba01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a4de1f72d146be0a88580ad004008ba01">Microtub</a> (int spid_in, int tid_in, Position &amp;spindle_end_pos, Position loose_end_pos, Velocity vel, Time dt, bool disable_nontube_forces, bool startsPoly, <a class="el" href="struct_m_t_internals.html">MTInternals</a> params_in)</td></tr>
+<tr class="memitem:a4de1f72d146be0a88580ad004008ba01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a4de1f72d146be0a88580ad004008ba01">Microtub</a> (int spid_in, int tid_in, Position &amp;spindle_end_pos, Position loose_end_pos, Velocity vel, Time dt, bool <a class="el" href="class_microtub.html#ad61a74a06db2b206b838e71dc2a5ef9e">disable_nontube_forces</a>, bool startsPoly, <a class="el" href="struct_m_t_internals.html">MTInternals</a> params_in)</td></tr>
 <tr class="separator:a4de1f72d146be0a88580ad004008ba01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace1e27a90d174d4d86a097b4d0d17663"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#ace1e27a90d174d4d86a097b4d0d17663">Microtub</a> (const <a class="el" href="class_microtub.html">Microtub</a> &amp;other)</td></tr>
 <tr class="separator:ace1e27a90d174d4d86a097b4d0d17663"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -90,7 +92,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4c0808b05f45a75750bd19af42b7f856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1264dd7a9c631937c6657120cfe3eeb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a1264dd7a9c631937c6657120cfe3eeb1">en_dis_ableBundleGrowth</a> (bool enable)</td></tr>
 <tr class="separator:a1264dd7a9c631937c6657120cfe3eeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaca84a34f9ed5f112771e771a633d6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#adaca84a34f9ed5f112771e771a633d6c">init_balls</a> (Position spindle_end_pos, Position loose_end_pos, Velocity vel, Time dt, bool disable_nontube_forces=false)</td></tr>
+<tr class="memitem:adaca84a34f9ed5f112771e771a633d6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#adaca84a34f9ed5f112771e771a633d6c">init_balls</a> (Position spindle_end_pos, Position loose_end_pos, Velocity vel, Time dt, bool <a class="el" href="class_microtub.html#ad61a74a06db2b206b838e71dc2a5ef9e">disable_nontube_forces</a>=false)</td></tr>
 <tr class="separator:adaca84a34f9ed5f112771e771a633d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24a50b98070d4222cf4635872f5df535"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structspringball_1_1ball.html">springball::ball</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a24a50b98070d4222cf4635872f5df535">new_main_ball</a> (Position pos, Velocity vel)</td></tr>
 <tr class="separator:a24a50b98070d4222cf4635872f5df535"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,10 +106,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a58bf2e2d63817de796e4cf860c86a343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a212f5f1c87fe3fc2780a28126b138e5e"><td class="memItemLeft" align="right" valign="top">constexpr Damping&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a212f5f1c87fe3fc2780a28126b138e5e">getAdjustedViscousDamping</a> () const</td></tr>
 <tr class="separator:a212f5f1c87fe3fc2780a28126b138e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf25d34d021405fb792e050539bbf87e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#aaf25d34d021405fb792e050539bbf87e">default_init_integrators</a> (Length restlength, Time dt, bool disable_nontube_forces=false)</td></tr>
+<tr class="memitem:aaf25d34d021405fb792e050539bbf87e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#aaf25d34d021405fb792e050539bbf87e">default_init_integrators</a> (Length restlength, Time dt, bool <a class="el" href="class_microtub.html#ad61a74a06db2b206b838e71dc2a5ef9e">disable_nontube_forces</a>=false)</td></tr>
 <tr class="separator:aaf25d34d021405fb792e050539bbf87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2d99c493b2705f53bb48226c750fb66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#aa2d99c493b2705f53bb48226c750fb66">fill_tubeMatrix</a> (size_t fixed_balls, Time dt, double &amp;alpha)</td></tr>
-<tr class="separator:aa2d99c493b2705f53bb48226c750fb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e54243a8de3406ec075ac70c1b08a42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a8e54243a8de3406ec075ac70c1b08a42">fill_tubeMatrix</a> (size_t fixed_balls, Time dt, Damping &amp;alpha)</td></tr>
+<tr class="separator:a8e54243a8de3406ec075ac70c1b08a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7fb608f1beb3064faeecafc08693c5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#ac7fb608f1beb3064faeecafc08693c5a">adjust_set_len</a> (int new_len)</td></tr>
 <tr class="separator:ac7fb608f1beb3064faeecafc08693c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe2dc26c5a9051fb2ab4fe8634bf56c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#abe2dc26c5a9051fb2ab4fe8634bf56c0">testEndOnTight</a> (Position KC_pos)</td></tr>
@@ -149,6 +151,58 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b3bbb296bffd3bfaed46f1fcf493d1c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a6b3bbb296bffd3bfaed46f1fcf493d1c">checkForPromotion</a> ()</td></tr>
 <tr class="separator:a6b3bbb296bffd3bfaed46f1fcf493d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a40ce4c2e8a52cf2a7e6c6660f55bd2ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classspringball_1_1spring_tie_primary.html">springball::springTiePrimary</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a40ce4c2e8a52cf2a7e6c6660f55bd2ad">getSpringTiePtr</a> ()</td></tr>
+<tr class="separator:a40ce4c2e8a52cf2a7e6c6660f55bd2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a895eec0e538cf71d7700b55a1852c8ed"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a895eec0e538cf71d7700b55a1852c8ed">min_balls</a> = MTParams::min_balls</td></tr>
+<tr class="separator:a895eec0e538cf71d7700b55a1852c8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34122ae1fd84cf7eff762cc3d59ecdba"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a34122ae1fd84cf7eff762cc3d59ecdba">SPid</a></td></tr>
+<tr class="separator:a34122ae1fd84cf7eff762cc3d59ecdba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a637300a5a0cd229d8fdd35b0ffc74679"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a637300a5a0cd229d8fdd35b0ffc74679">Tid</a></td></tr>
+<tr class="separator:a637300a5a0cd229d8fdd35b0ffc74679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c3d4fce88d5226f5239bd33a6f4500"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classspringball_1_1ballset.html">springball::ballset</a>&lt; integrator_T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a94c3d4fce88d5226f5239bd33a6f4500">set</a></td></tr>
+<tr class="separator:a94c3d4fce88d5226f5239bd33a6f4500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a837711e5329f9f9dfacdac9884ee9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacespringball.html#af7317666f5a7ddc157b16737c93013fa">springball::ballsingle</a>&lt; integrator_Tip &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#aa3a837711e5329f9f9dfacdac9884ee9">tip</a></td></tr>
+<tr class="separator:aa3a837711e5329f9f9dfacdac9884ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfde513626ce7508c57462e240fb52c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classspringball_1_1spring_tie_primary.html">springball::springTiePrimary</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#acfde513626ce7508c57462e240fb52c2">mySpringTie</a> =nullptr</td></tr>
+<tr class="separator:acfde513626ce7508c57462e240fb52c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa026f1ec6d0b5ab2c6bacdeabcb9824"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#afa026f1ec6d0b5ab2c6bacdeabcb9824">isEndOn</a> = true</td></tr>
+<tr class="separator:afa026f1ec6d0b5ab2c6bacdeabcb9824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b061d3560a069ffb3982d47b2285ca"><td class="memItemLeft" align="right" valign="top">penta_repeating&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a86b061d3560a069ffb3982d47b2285ca">tubeMatrix</a> {5, 2, 2}</td></tr>
+<tr class="separator:a86b061d3560a069ffb3982d47b2285ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8ca429b430e886b0c7671a7505dc11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classspringball_1_1implicit__chain.html">springball::implicit_chain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a9f8ca429b430e886b0c7671a7505dc11">tubeForces</a> = nullptr</td></tr>
+<tr class="separator:a9f8ca429b430e886b0c7671a7505dc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b832830a67f5e8a932f6b93b048f8b4"><td class="memItemLeft" align="right" valign="top">Time&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a2b832830a67f5e8a932f6b93b048f8b4">implicit_dt</a> {0.0}</td></tr>
+<tr class="separator:a2b832830a67f5e8a932f6b93b048f8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801a9de3f1f96b8882677717f3111e01"><td class="memItemLeft" align="right" valign="top">Position &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a801a9de3f1f96b8882677717f3111e01">spindlePos</a></td></tr>
+<tr class="separator:a801a9de3f1f96b8882677717f3111e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40e09dc30e52a38d11bbcd4bd0d29ce0"><td class="memItemLeft" align="right" valign="top">Position *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a40e09dc30e52a38d11bbcd4bd0d29ce0">KCPos</a> = nullptr</td></tr>
+<tr class="separator:a40e09dc30e52a38d11bbcd4bd0d29ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78b6d6cb322aa3ef6c8205dab1b8d96"><td class="memItemLeft" align="right" valign="top">Time&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#ad78b6d6cb322aa3ef6c8205dab1b8d96">attachmentTime</a> = Time{0.0}</td></tr>
+<tr class="separator:ad78b6d6cb322aa3ef6c8205dab1b8d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917a3d2b42aa5bb1e1b48475270ae3bf"><td class="memItemLeft" align="right" valign="top">Time&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a917a3d2b42aa5bb1e1b48475270ae3bf">switchTime</a> = Time{0.0}</td></tr>
+<tr class="separator:a917a3d2b42aa5bb1e1b48475270ae3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1e6bc714958b21c312ca17cb4aeb0ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#ac1e6bc714958b21c312ca17cb4aeb0ad">nBundle</a> = 1</td></tr>
+<tr class="separator:ac1e6bc714958b21c312ca17cb4aeb0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a412680a001a2e51219724b2a1df1798a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a412680a001a2e51219724b2a1df1798a">bundleGrowthEnabled</a> = true</td></tr>
+<tr class="separator:a412680a001a2e51219724b2a1df1798a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908124a44ecd0cc116aec8a4aefd3bf6"><td class="memItemLeft" align="right" valign="top">Time&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a908124a44ecd0cc116aec8a4aefd3bf6">lastBundleGrowthTime</a> = Time{0.0}</td></tr>
+<tr class="separator:a908124a44ecd0cc116aec8a4aefd3bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc9a2befbcbbd1b10d6605fea8c6138c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#acc9a2befbcbbd1b10d6605fea8c6138c">disablePolymerisation</a> = false</td></tr>
+<tr class="separator:acc9a2befbcbbd1b10d6605fea8c6138c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2caf629af1c6b72630ef026459667419"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a2caf629af1c6b72630ef026459667419">isPoly</a> =true</td></tr>
+<tr class="separator:a2caf629af1c6b72630ef026459667419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad61a74a06db2b206b838e71dc2a5ef9e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#ad61a74a06db2b206b838e71dc2a5ef9e">disable_nontube_forces</a> = false</td></tr>
+<tr class="separator:ad61a74a06db2b206b838e71dc2a5ef9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab40b3ac7934054fd155aec83e68dd1f4"><td class="memItemLeft" align="right" valign="top">Length&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#ab40b3ac7934054fd155aec83e68dd1f4">initial_restlength</a> = Length{1.0}</td></tr>
+<tr class="separator:ab40b3ac7934054fd155aec83e68dd1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c6c61afd87eb9683b96e3d751ea005"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_t_internals.html">MTInternals</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#ae5c6c61afd87eb9683b96e3d751ea005">params</a></td></tr>
+<tr class="separator:ae5c6c61afd87eb9683b96e3d751ea005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a3b87e8eec5c5f9b3bdbeaf8e26f90e2a"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_microtub.html#a3b87e8eec5c5f9b3bdbeaf8e26f90e2a">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_microtub.html">Microtub</a> &amp;mt)</td></tr>
@@ -157,7 +211,7 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename integrator_T, typename integrator_Tip&gt;<br />
 class Microtub&lt; integrator_T, integrator_Tip &gt;</div><p >A microtubule. </p>
-<p >Microtubule class, containing set of balls to handle dynamics (using forces as prescribed by given integrator), and also logic for polymerising, and other effects Parameters set by the input system are included via the <a class="el" href="struct_m_t_internals.html">MTInternals</a> struct. Note that tubules have a virtual extra "tip" ball to handle polymerisation/depolymerisation </p>
+<p >Microtubule class, containing set of balls to handle dynamics (using forces as prescribed by given integrator), and also logic for polymerising, and other effects Parameters set by the input system are included via the <a class="el" href="struct_m_t_internals.html" title="Struct for internal parameters of a microtubule.">MTInternals</a> struct. Note that tubules have a virtual extra "tip" ball to handle polymerisation/depolymerisation </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4de1f72d146be0a88580ad004008ba01" name="a4de1f72d146be0a88580ad004008ba01"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4de1f72d146be0a88580ad004008ba01">&#9670;&nbsp;</a></span>Microtub() <span class="overload">[1/2]</span></h2>
@@ -447,7 +501,7 @@ template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Check if bundle fibre count should increase </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Implement this check </dd></dl>
+<p >Check if bundle fibre count should increase </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Implement this check </dd></dl>
 
 </div>
 </div>
@@ -715,8 +769,8 @@ template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
 
 </div>
 </div>
-<a id="aa2d99c493b2705f53bb48226c750fb66" name="aa2d99c493b2705f53bb48226c750fb66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2d99c493b2705f53bb48226c750fb66">&#9670;&nbsp;</a></span>fill_tubeMatrix()</h2>
+<a id="a8e54243a8de3406ec075ac70c1b08a42" name="a8e54243a8de3406ec075ac70c1b08a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e54243a8de3406ec075ac70c1b08a42">&#9670;&nbsp;</a></span>fill_tubeMatrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -741,7 +795,7 @@ template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramtype">Damping &amp;&#160;</td>
           <td class="paramname"><em>alpha</em>&#160;</td>
         </tr>
         <tr>
@@ -766,7 +820,7 @@ template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Whether the matrix was filled successfully </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>any other failure cases? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>any other failure cases? </dd></dl>
 
 </div>
 </div>
@@ -882,6 +936,34 @@ template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
 
 </div>
 </div>
+<a id="a40ce4c2e8a52cf2a7e6c6660f55bd2ad" name="a40ce4c2e8a52cf2a7e6c6660f55bd2ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40ce4c2e8a52cf2a7e6c6660f55bd2ad">&#9670;&nbsp;</a></span>getSpringTiePtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classspringball_1_1spring_tie_primary.html">springball::springTiePrimary</a> * <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::getSpringTiePtr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Helper function to select which springTie is in use for endOn versus Lateral attachment </p>
+
+</div>
+</div>
 <a id="a1a959fd77cd84153ec2ac4bc041393c4" name="a1a959fd77cd84153ec2ac4bc041393c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a959fd77cd84153ec2ac4bc041393c4">&#9670;&nbsp;</a></span>getTid()</h2>
 
@@ -935,7 +1017,7 @@ template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
 </table>
 </div><div class="memdoc">
 <p >Increase fibre count in bundle</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>implement this </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>implement this </dd></dl>
 
 </div>
 </div>
@@ -1492,6 +1574,557 @@ template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
 <p >Microtubule with N balls</p>
 <p >Position Velocity</p>
 <p >...</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad78b6d6cb322aa3ef6c8205dab1b8d96" name="ad78b6d6cb322aa3ef6c8205dab1b8d96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad78b6d6cb322aa3ef6c8205dab1b8d96">&#9670;&nbsp;</a></span>attachmentTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Time <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::attachmentTime = Time{0.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Time of attachment </p>
+
+</div>
+</div>
+<a id="a412680a001a2e51219724b2a1df1798a" name="a412680a001a2e51219724b2a1df1798a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a412680a001a2e51219724b2a1df1798a">&#9670;&nbsp;</a></span>bundleGrowthEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::bundleGrowthEnabled = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Whether to allow bundle growth </p>
+
+</div>
+</div>
+<a id="ad61a74a06db2b206b838e71dc2a5ef9e" name="ad61a74a06db2b206b838e71dc2a5ef9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad61a74a06db2b206b838e71dc2a5ef9e">&#9670;&nbsp;</a></span>disable_nontube_forces</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::disable_nontube_forces = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Disable all forces except tube forces (for testing or debugging) </p>
+
+</div>
+</div>
+<a id="acc9a2befbcbbd1b10d6605fea8c6138c" name="acc9a2befbcbbd1b10d6605fea8c6138c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc9a2befbcbbd1b10d6605fea8c6138c">&#9670;&nbsp;</a></span>disablePolymerisation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::disablePolymerisation = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Disable the polymerising dynamics (for testing or debugging) </p>
+
+</div>
+</div>
+<a id="a2b832830a67f5e8a932f6b93b048f8b4" name="a2b832830a67f5e8a932f6b93b048f8b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b832830a67f5e8a932f6b93b048f8b4">&#9670;&nbsp;</a></span>implicit_dt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Time <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::implicit_dt {0.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Store dt for implicit force calculations </p>
+
+</div>
+</div>
+<a id="ab40b3ac7934054fd155aec83e68dd1f4" name="ab40b3ac7934054fd155aec83e68dd1f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab40b3ac7934054fd155aec83e68dd1f4">&#9670;&nbsp;</a></span>initial_restlength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Length <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::initial_restlength = Length{1.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Initial restlength of tube segments </p>
+
+</div>
+</div>
+<a id="afa026f1ec6d0b5ab2c6bacdeabcb9824" name="afa026f1ec6d0b5ab2c6bacdeabcb9824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa026f1ec6d0b5ab2c6bacdeabcb9824">&#9670;&nbsp;</a></span>isEndOn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::isEndOn = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Whether attachment is end-on or side-on. If true, mySpringTie should be latter case described, else former </p>
+
+</div>
+</div>
+<a id="a2caf629af1c6b72630ef026459667419" name="a2caf629af1c6b72630ef026459667419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2caf629af1c6b72630ef026459667419">&#9670;&nbsp;</a></span>isPoly</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::isPoly =true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Track whether is growing (polymerising) or contracting (depolymerising) </p>
+
+</div>
+</div>
+<a id="a40e09dc30e52a38d11bbcd4bd0d29ce0" name="a40e09dc30e52a38d11bbcd4bd0d29ce0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40e09dc30e52a38d11bbcd4bd0d29ce0">&#9670;&nbsp;</a></span>KCPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Position* <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::KCPos = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >KC position pointer - may be nullptr if unattached!! </p>
+
+</div>
+</div>
+<a id="a908124a44ecd0cc116aec8a4aefd3bf6" name="a908124a44ecd0cc116aec8a4aefd3bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a908124a44ecd0cc116aec8a4aefd3bf6">&#9670;&nbsp;</a></span>lastBundleGrowthTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Time <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::lastBundleGrowthTime = Time{0.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Time of last bundle growth </p>
+
+</div>
+</div>
+<a id="a895eec0e538cf71d7700b55a1852c8ed" name="a895eec0e538cf71d7700b55a1852c8ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a895eec0e538cf71d7700b55a1852c8ed">&#9670;&nbsp;</a></span>min_balls</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::min_balls = MTParams::min_balls</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Minimum number of balls allowed in this tubule </p>
+
+</div>
+</div>
+<a id="acfde513626ce7508c57462e240fb52c2" name="acfde513626ce7508c57462e240fb52c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfde513626ce7508c57462e240fb52c2">&#9670;&nbsp;</a></span>mySpringTie</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classspringball_1_1spring_tie_primary.html">springball::springTiePrimary</a>* <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::mySpringTie =nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Tie to KC. May point to either integrator_T or integrator_Tip provided tie force object </p>
+
+</div>
+</div>
+<a id="ac1e6bc714958b21c312ca17cb4aeb0ad" name="ac1e6bc714958b21c312ca17cb4aeb0ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1e6bc714958b21c312ca17cb4aeb0ad">&#9670;&nbsp;</a></span>nBundle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::nBundle = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Current number of fibres in bundle </p>
+
+</div>
+</div>
+<a id="ae5c6c61afd87eb9683b96e3d751ea005" name="ae5c6c61afd87eb9683b96e3d751ea005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c6c61afd87eb9683b96e3d751ea005">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_t_internals.html">MTInternals</a> <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::params</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Additional parameters struct, set by input system </p>
+
+</div>
+</div>
+<a id="a94c3d4fce88d5226f5239bd33a6f4500" name="a94c3d4fce88d5226f5239bd33a6f4500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94c3d4fce88d5226f5239bd33a6f4500">&#9670;&nbsp;</a></span>set</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classspringball_1_1ballset.html">springball::ballset</a>&lt;integrator_T&gt; <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::set</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Ballset representing main ball-spring assembly </p>
+
+</div>
+</div>
+<a id="a34122ae1fd84cf7eff762cc3d59ecdba" name="a34122ae1fd84cf7eff762cc3d59ecdba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34122ae1fd84cf7eff762cc3d59ecdba">&#9670;&nbsp;</a></span>SPid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::SPid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >ID of spindle point this MT originates from </p>
+
+</div>
+</div>
+<a id="a801a9de3f1f96b8882677717f3111e01" name="a801a9de3f1f96b8882677717f3111e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a801a9de3f1f96b8882677717f3111e01">&#9670;&nbsp;</a></span>spindlePos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Position&amp; <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::spindlePos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Spindle end position for boundary </p>
+
+</div>
+</div>
+<a id="a917a3d2b42aa5bb1e1b48475270ae3bf" name="a917a3d2b42aa5bb1e1b48475270ae3bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a917a3d2b42aa5bb1e1b48475270ae3bf">&#9670;&nbsp;</a></span>switchTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Time <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::switchTime = Time{0.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Time of last polymerisation/depolymerisation switch </p>
+
+</div>
+</div>
+<a id="a637300a5a0cd229d8fdd35b0ffc74679" name="a637300a5a0cd229d8fdd35b0ffc74679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a637300a5a0cd229d8fdd35b0ffc74679">&#9670;&nbsp;</a></span>Tid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::Tid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >ID number of this tubule </p>
+
+</div>
+</div>
+<a id="aa3a837711e5329f9f9dfacdac9884ee9" name="aa3a837711e5329f9f9dfacdac9884ee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3a837711e5329f9f9dfacdac9884ee9">&#9670;&nbsp;</a></span>tip</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacespringball.html#af7317666f5a7ddc157b16737c93013fa">springball::ballsingle</a>&lt;integrator_Tip&gt; <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::tip</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Ball representing tip of MT to allow for polymerisation/depolymerisation with constant length bending implementation. Note End-on attachment is special and attaches to this: lateral attachment is to main ballset </p>
+
+</div>
+</div>
+<a id="a9f8ca429b430e886b0c7671a7505dc11" name="a9f8ca429b430e886b0c7671a7505dc11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f8ca429b430e886b0c7671a7505dc11">&#9670;&nbsp;</a></span>tubeForces</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classspringball_1_1implicit__chain.html">springball::implicit_chain</a>* <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::tubeForces = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Tube forces pointer for faster updates </p>
+
+</div>
+</div>
+<a id="a86b061d3560a069ffb3982d47b2285ca" name="a86b061d3560a069ffb3982d47b2285ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b061d3560a069ffb3982d47b2285ca">&#9670;&nbsp;</a></span>tubeMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename integrator_T , typename integrator_Tip &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">penta_repeating <a class="el" href="class_microtub.html">Microtub</a>&lt; integrator_T, integrator_Tip &gt;::tubeMatrix {5, 2, 2}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Matrix for tube implicit forces. Initial length arbitrary, hdr and ftr set by spring force </p>
 
 </div>
 </div>

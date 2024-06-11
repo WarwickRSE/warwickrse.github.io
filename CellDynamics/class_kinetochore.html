@@ -65,6 +65,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_kinetochore-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Kinetochore Class Reference</div></div>
 </div><!--header-->
@@ -99,6 +100,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a83a0c0328a3c5a2a9d430c7dca467a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5013b31b4c23186c936bc47e309867ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinetochore.html#a5013b31b4c23186c936bc47e309867ef">tick</a> (Time dt)</td></tr>
 <tr class="separator:a5013b31b4c23186c936bc47e309867ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a426252dcfc20828be1208014e0c5a03f"><td class="memItemLeft" align="right" valign="top">Position &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinetochore.html#a426252dcfc20828be1208014e0c5a03f">pos</a></td></tr>
+<tr class="separator:a426252dcfc20828be1208014e0c5a03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949a6e03feee08725df849d49198eebb"><td class="memItemLeft" align="right" valign="top">Velocity &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinetochore.html#a949a6e03feee08725df849d49198eebb">vel</a></td></tr>
+<tr class="separator:a949a6e03feee08725df849d49198eebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34e01a59df2ff0aba8354be7ed0ea87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinetochore.html#af34e01a59df2ff0aba8354be7ed0ea87">isFreeF</a> = true</td></tr>
+<tr class="separator:af34e01a59df2ff0aba8354be7ed0ea87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2000897bb6e121270f24cc51d5da074a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kinetochore.html#a2000897bb6e121270f24cc51d5da074a">isEndOnF</a> = false</td></tr>
+<tr class="separator:a2000897bb6e121270f24cc51d5da074a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A single <a class="el" href="class_kinetochore.html" title="A single Kinetochore.">Kinetochore</a>. </p>
@@ -402,6 +414,99 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >Do any additional dynamics - NO-OP now </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2000897bb6e121270f24cc51d5da074a" name="a2000897bb6e121270f24cc51d5da074a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2000897bb6e121270f24cc51d5da074a">&#9670;&nbsp;</a></span>isEndOnF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Kinetochore::isEndOnF = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >(Used only if attached), is this KC end on or motoring? </p>
+
+</div>
+</div>
+<a id="af34e01a59df2ff0aba8354be7ed0ea87" name="af34e01a59df2ff0aba8354be7ed0ea87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af34e01a59df2ff0aba8354be7ed0ea87">&#9670;&nbsp;</a></span>isFreeF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Kinetochore::isFreeF = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Flag for whether this KC is free or attached to MT </p>
+
+</div>
+</div>
+<a id="a426252dcfc20828be1208014e0c5a03f" name="a426252dcfc20828be1208014e0c5a03f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a426252dcfc20828be1208014e0c5a03f">&#9670;&nbsp;</a></span>pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Position&amp; Kinetochore::pos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Position of ball this KC maps to </p>
+
+</div>
+</div>
+<a id="a949a6e03feee08725df849d49198eebb" name="a949a6e03feee08725df849d49198eebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949a6e03feee08725df849d49198eebb">&#9670;&nbsp;</a></span>vel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Velocity&amp; Kinetochore::vel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Velocity of ball this KC maps to </p>
 
 </div>
 </div>

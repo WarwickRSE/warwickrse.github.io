@@ -65,6 +65,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classranged__random__engine-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ranged_random_engine&lt; t_dist, t_val &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -89,6 +90,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad24fa2ed7bfd61d277e93a60b98c679b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a315aebf7152bffd8872c418fe3c46adb"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classranged__random__engine.html#a315aebf7152bffd8872c418fe3c46adb">get_seed</a> ()</td></tr>
 <tr class="separator:a315aebf7152bffd8872c418fe3c46adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae35a9f2eab664a5358e8ec63404e943e"><td class="memItemLeft" align="right" valign="top">t_val&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classranged__random__engine.html#ae35a9f2eab664a5358e8ec63404e943e">range_min</a></td></tr>
+<tr class="separator:ae35a9f2eab664a5358e8ec63404e943e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa85579289dc0198b2a22610c7e394e38"><td class="memItemLeft" align="right" valign="top">t_val&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classranged__random__engine.html#aa85579289dc0198b2a22610c7e394e38">range_max</a></td></tr>
+<tr class="separator:aa85579289dc0198b2a22610c7e394e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af767916a8489622306cd8e443d9b06aa"><td class="memItemLeft" align="right" valign="top">std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classranged__random__engine.html#af767916a8489622306cd8e443d9b06aa">generator</a></td></tr>
+<tr class="separator:af767916a8489622306cd8e443d9b06aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b1fca6c966db2a6c6ae18713b2e00f4"><td class="memItemLeft" align="right" valign="top">t_dist&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classranged__random__engine.html#a8b1fca6c966db2a6c6ae18713b2e00f4">dist</a></td></tr>
+<tr class="separator:a8b1fca6c966db2a6c6ae18713b2e00f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f47af51c42e962b0f8d10a9d3ea7d3"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classranged__random__engine.html#a66f47af51c42e962b0f8d10a9d3ea7d3">seed_used</a></td></tr>
+<tr class="separator:a66f47af51c42e962b0f8d10a9d3ea7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename t_dist, typename t_val&gt;<br />
@@ -325,6 +339,132 @@ template&lt;typename t_dist , typename t_val &gt; </div>
 </table>
 </div><div class="memdoc">
 <p >Generic initialisation code </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8b1fca6c966db2a6c6ae18713b2e00f4" name="a8b1fca6c966db2a6c6ae18713b2e00f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1fca6c966db2a6c6ae18713b2e00f4">&#9670;&nbsp;</a></span>dist</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename t_dist , typename t_val &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">t_dist <a class="el" href="classranged__random__engine.html">ranged_random_engine</a>&lt; t_dist, t_val &gt;::dist</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Random distribution </p>
+
+</div>
+</div>
+<a id="af767916a8489622306cd8e443d9b06aa" name="af767916a8489622306cd8e443d9b06aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af767916a8489622306cd8e443d9b06aa">&#9670;&nbsp;</a></span>generator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename t_dist , typename t_val &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mt19937 <a class="el" href="classranged__random__engine.html">ranged_random_engine</a>&lt; t_dist, t_val &gt;::generator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Random number generator (Mersenne Twister) </p>
+
+</div>
+</div>
+<a id="aa85579289dc0198b2a22610c7e394e38" name="aa85579289dc0198b2a22610c7e394e38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa85579289dc0198b2a22610c7e394e38">&#9670;&nbsp;</a></span>range_max</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename t_dist , typename t_val &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">t_val <a class="el" href="classranged__random__engine.html">ranged_random_engine</a>&lt; t_dist, t_val &gt;::range_max</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Range for generated values - max </p>
+
+</div>
+</div>
+<a id="ae35a9f2eab664a5358e8ec63404e943e" name="ae35a9f2eab664a5358e8ec63404e943e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae35a9f2eab664a5358e8ec63404e943e">&#9670;&nbsp;</a></span>range_min</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename t_dist , typename t_val &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">t_val <a class="el" href="classranged__random__engine.html">ranged_random_engine</a>&lt; t_dist, t_val &gt;::range_min</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Range for generated values - max </p>
+
+</div>
+</div>
+<a id="a66f47af51c42e962b0f8d10a9d3ea7d3" name="a66f47af51c42e962b0f8d10a9d3ea7d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f47af51c42e962b0f8d10a9d3ea7d3">&#9670;&nbsp;</a></span>seed_used</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename t_dist , typename t_val &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="classranged__random__engine.html">ranged_random_engine</a>&lt; t_dist, t_val &gt;::seed_used</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Store seed so can extract it again later </p>
 
 </div>
 </div>

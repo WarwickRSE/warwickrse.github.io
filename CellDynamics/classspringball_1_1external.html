@@ -63,17 +63,21 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>springball</b></li><li class="navelem"><a class="el" href="classspringball_1_1external.html">external</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacespringball.html">springball</a></li><li class="navelem"><a class="el" href="classspringball_1_1external.html">external</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classspringball_1_1external-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">springball::external Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A fixed force.  
+ <a href="classspringball_1_1external.html#details">More...</a></p>
 
 <p><code>#include &lt;ballset.h&gt;</code></p>
 <table class="memberdecls">
@@ -96,9 +100,17 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a0a6fb015d4566629047ed63eb9053f65"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1external.html#a0a6fb015d4566629047ed63eb9053f65">implicit</a> = false</td></tr>
 <tr class="separator:a0a6fb015d4566629047ed63eb9053f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8d6769a986e9e85a4e39866769e40088"><td class="memItemLeft" align="right" valign="top">Force *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1external.html#a8d6769a986e9e85a4e39866769e40088">force</a> =nullptr</td></tr>
+<tr class="separator:a8d6769a986e9e85a4e39866769e40088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5423abac0e7715b70310fc35c034fee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspringball_1_1external.html#ad5423abac0e7715b70310fc35c034fee">active</a> = true</td></tr>
+<tr class="separator:ad5423abac0e7715b70310fc35c034fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >An external force - the force value should exist (and be calculated) elsewhere and this simply applies it </p>
+<div class="textblock"><p >A fixed force. </p>
+<p >An external force - the force value should exist (and be calculated) elsewhere and this simply applies it </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a123aaa1746937aeb1553f2dcf12f040b" name="a123aaa1746937aeb1553f2dcf12f040b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a123aaa1746937aeb1553f2dcf12f040b">&#9670;&nbsp;</a></span>disable()</h2>
@@ -276,6 +288,52 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad5423abac0e7715b70310fc35c034fee" name="ad5423abac0e7715b70310fc35c034fee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5423abac0e7715b70310fc35c034fee">&#9670;&nbsp;</a></span>active</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool springball::external::active = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Whether force should be applied or no-op </p>
+
+</div>
+</div>
+<a id="a8d6769a986e9e85a4e39866769e40088" name="a8d6769a986e9e85a4e39866769e40088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d6769a986e9e85a4e39866769e40088">&#9670;&nbsp;</a></span>force</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Force* springball::external::force =nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Pointer to actual force </p>
+
+</div>
+</div>
 <a id="a0a6fb015d4566629047ed63eb9053f65" name="a0a6fb015d4566629047ed63eb9053f65"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a6fb015d4566629047ed63eb9053f65">&#9670;&nbsp;</a></span>implicit</h2>
 

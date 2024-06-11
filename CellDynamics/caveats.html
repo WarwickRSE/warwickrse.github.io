@@ -67,12 +67,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt>Member <a class="el" href="namespace_initial.html#aa0a726611aeb0159083112131077bf7d">Initial::SpindleVelocity</a>  </dt>
+<dt>Member <a class="el" href="namespace_initial_setup.html#a34c6b6ddf790e31dd616c162e050ac18">InitialSetup::SpindleVelocity</a>  </dt>
 <dd><a class="anchor" id="_caveats000004"></a> This must not move points out of cell over simulated period or error results  </dd>
 <dt>Member <a class="el" href="class_k_c_p.html#ae94b71ce6a2f0c506591b79a4075db1e">KCP&lt; integrator_T &gt;::detach</a>  (iKC which)</dt>
 <dd><a class="anchor" id="_caveats000003"></a> The mimic force deactivation is handled from the other end by the Microtubule and both entities must be detached for a valid state  </dd>
 <dt>Class <a class="el" href="class_simulation.html">Simulation</a>  </dt>
-<dd><a class="anchor" id="_caveats000005"></a> <a class="el" href="class_simulation.html" title="A single realisation of a cell dynamics simulation.">Simulation</a> SETUP will establish the Spindles and Kinetochores and AFTER SETUP COMPLETES these will never be deleted. It is therefore safe to refer into them using pointers/references elsewhere in the code. DO NOT write code which modifies the SP or KC vectors after setup completes. DO NOT write code which refers to Microtubules this way! They can be and are regularly added and destroyed, and thus cannot be assumed stationary in memory.  </dd>
+<dd><a class="anchor" id="_caveats000005"></a> Simulation SETUP will establish the Spindles and Kinetochores and AFTER SETUP COMPLETES these will never be deleted. It is therefore safe to refer into them using pointers/references elsewhere in the code. DO NOT write code which modifies the SP or KC vectors after setup completes. DO NOT write code which refers to Microtubules this way! They can be and are regularly added and destroyed, and thus cannot be assumed stationary in memory.  </dd>
 <dt>Class <a class="el" href="classspringball_1_1spring_tie_mimic.html">springball::springTieMimic</a>  </dt>
 <dd><a class="anchor" id="_caveats000001"></a> The force here is simply applied by value, so must have already been populated. In Debug mode this is strictly enforced.  </dd>
 <dt>Class <a class="el" href="classspringball_1_1spring_tie_primary.html">springball::springTiePrimary</a>  </dt>
