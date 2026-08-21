@@ -57,15 +57,10 @@
       <div class="table-wrap"><table><thead><tr id="table-head"></tr></thead><tbody id="table-body"></tbody></table></div>
     </section>
   </main>
+  <script src="projects.js"></script>
   <script>
-    const json_str = `[
-      { "name": "Project 1", "language": "C++", "description": "A project", "duration": "6", "date": "01-01-26", "size": "small" },
-      { "name": "Project 2", "language": "Python", "description": "A project", "duration": "6", "date": "01-04-26", "size": "medium" }
-    ]`;
-
-    const projects = JSON.parse(json_str);
     const columns = Object.keys(projects[0] || {});
-    const labels = { name:'Project', language:'Language', description:'Description', duration:'Duration', date:'Date', size:'Size' };
+    const labels = { name:'Project', language:'Language', description:'Description', duration:'Duration', date:'Start Date', size:'Size' };
     const state = { search:'', language:'', size:'', duration:'', sort:'name', direction:'asc' };
     const tableHead = document.querySelector('#table-head');
     const tableBody = document.querySelector('#table-body');
