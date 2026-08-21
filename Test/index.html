@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+	</head>
+	<body>
+    <form id="language-filter-form">
+      <label for="language-filter">Filter by language:</label>
+      <input id="language-filter" name="language" type="text">
+      <button type="submit">Filter</button>
+    </form>
+
+    <table id="projects-table">
+      <caption>Projects</caption>
+    </table>
+
+    <script>
+      const json_str = `[
+        {
+          "name": "Project 1",
+          "language": "C++",
+          "description": "A project",
+          "duration": "6",
+          "time": "20"
+        },
+        {
+          "name": "Project 2",
+          "language": "Python",
+          "description": "A project",
+          "duration": "6",
+          "time": "20"
+        }
+      ]`;
+
+      const projects = JSON.parse(json_str);
+      const table = document.querySelector('#projects-table');
+      const filterForm = document.querySelector('#language-filter-form');
+      const filterInput = document.querySelector('#language-filter');
+      const columns = Object.keys(projects[0]);
+
+      function renderTable(languageFilter = '') {
+        const normalizedFilter = languageFilter.trim().toLowerCase();
+        const matchingProjects = projects.filter((project) =>
+          String(project.language).toLowerCase().includes(normalizedFilter)
+        );
+
+        table.replaceChildren(document.createElement('caption'));
+        table.querySelector('caption').textContent = 'Projects';
+
+        const headerRow = table.insertRow();
+        for (const column of columns) {
+          const headerCell = document.createElement('th');
+          headerCell.scope = 'col';
+          headerCell.textContent = column;
+          headerRow.appendChild(headerCell);
+        }
+
+        for (const project of matchingProjects) {
+          const row = table.insertRow();
+          for (const column of columns) {
+            row.insertCell().textContent = project[column] ?? '';
+          }
+        }
+      }
+
+      filterForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        renderTable(filterInput.value);
+      });
+
+      renderTable();
+    </script>
+	</body>
+</html>
