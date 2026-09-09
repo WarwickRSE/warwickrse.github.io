@@ -30,6 +30,8 @@
 		}
 
 		header {
+			position: relative;
+			overflow: hidden;
 			padding: 72px 24px 64px;
 			color: #fff;
 			background: var(--purple-dark);
@@ -50,6 +52,33 @@
 			font-weight: 400;
 			letter-spacing: -0.03em;
 			line-height: 1;
+		}
+
+		.header-copy {
+			padding-right: 170px;
+		}
+
+		.header-penguin {
+			position: absolute;
+			top: 24px;
+			right: max(24px, calc((100% - 1040px) / 2));
+			width: 122px;
+			height: 148px;
+			object-fit: contain;
+			object-position: top center;
+		}
+
+		.penguin-attribution {
+			position: absolute;
+			top: 174px;
+			right: max(20px, calc((100% - 1040px) / 2));
+			width: 160px;
+			margin: 0;
+			color: #dcd8ff;
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 0.68rem;
+			line-height: 1.35;
+			text-align: center;
 		}
 
 		header p {
@@ -190,6 +219,29 @@
 				padding: 52px 20px 44px;
 			}
 
+			.header-copy {
+				padding-right: 0;
+			}
+
+			.header-penguin {
+				position: relative;
+				top: auto;
+				right: auto;
+				display: block;
+				width: 82px;
+				height: 100px;
+				margin: 26px 0 -18px auto;
+			}
+
+			.penguin-attribution {
+				position: relative;
+				top: auto;
+				right: auto;
+				width: min(220px, 100%);
+				margin: -12px 0 0 auto;
+				text-align: right;
+			}
+
 			main {
 				padding: 12px 20px 44px;
 			}
@@ -206,8 +258,12 @@
 </head>
 <body>
 	<header>
-		<h1>Warwick RSE</h1>
-		<p>We are the Research Software Engineering team embedded in the Scientific Computing <span class="tooltip-term" tabindex="0" role="img" aria-label="RTP: Research Technology Platform" data-tooltip="Research Technology Platform - an initiative to centralise shared research resources">RTP</span>.</p>
+		<div class="header-copy">
+			<h1>Warwick RSE</h1>
+			<p>We are the Research Software Engineering team embedded in the Scientific Computing <span class="tooltip-term" tabindex="0" role="img" aria-label="RTP: Research Technology Platform" data-tooltip="Research Technology Platform - an initiative to centralise shared research resources">RTP</span>.</p>
+		</div>
+		<img class="header-penguin" src="Angry_Penguin.svg" alt="Angry penguin illustration">
+		<p class="penguin-attribution">&ldquo;The Angry Penguin&rdquo;, used under Creative Commons licence<br>from Swantje Hess and Jannis Pohlmann.</p>
 	</header>
 
 	<main>
@@ -230,7 +286,7 @@
 			</article>
             <article>
                 <h3>Svenja Janke</h3>
-                <p>A chemist in a previous life, Svenja works primarily for the Heterogenous Systems CDT but is also one of the core RSE team. She's done plenty of Fortran, Python and a little Julia, and has recently been getting Rusty - sorry, learning some Rust - to round it out. 
+                <p>A computational chemist in a previous life, Svenja works primarily for the Heterogenous Systems CDT but is also one of the core RSE team. She's done plenty of Fortran, Python and a little Julia, and has recently been getting Rusty - sorry, learning some Rust - to round it out. 
                 </p>
 			</article>
             <article>
