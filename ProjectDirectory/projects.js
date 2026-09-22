@@ -16,7 +16,7 @@ const projects = [
 
 { "name": "TRM Subs", "language": ["C++", "Python"], "description": "Modernising the astrophysics codes written by Tom Marsh, including updates and installation tweaks", "duration": "11", "date": "01-09-24", "size": "medium" },
 
-{ "name": "PyBAMM battery simulation", "language": "Python", "description": "Improving and optimising the PyBAMM batter simulation package", "duration": "24", "date": "01-06-23", "size": "large" },
+{ "name": "PyBAMM and PyBOP battery simulation", "language": "Python", "description": "Improving and optimising the PyBAMM battery simulation package", "duration": "24", "date": "01-06-23", "size": "large" },
 
 { "name": "Microscopy Image Pipeline", "language": ["C++", "Matlab", "Python"], "description": "This project had a variety of tasks. Initially we focussed on translating Matlab code into C++. Later we were tasked to provide with an image sharing and processing platform, which we did by spinning-up a custom copy of the Galaxy platform for data-intensive biomedical research, and creating a custom tool for the work.", "duration": "18", "date": "01-11-23", "size": "large" },
 
@@ -30,11 +30,14 @@ const projects = [
 
 {"name": "Geant4 CPP-TEPP", "language": "C++", "description": "Adding Testing and Documentation (and minor bug fixes) to the Geant Particle Physics simulation suite. Part of a CoSec project for community development of Computational Particle Physics codes.", "duration": "12", "date": "01-04-26", "size": "large" },
 { "name": "Internal Tool Development", "language": ["PHP", "SQL", "HTML", "JS"] , "description": "Updating and extending the internal system handling host (computer) IP address management, network management and queue management. For modernisation and to support network changes imposed by IDG", "duration": "-1", "date": "01-04-25", "size": "medium" },
-{"name": "PyBAMM battery simulation - ctd", "language": "Python", "description": "", "duration": "60", "date": "01-05-25", "size": "medium" },
+
+{"name": "Battery parametrisation and optimisation (PyBOP)", "language": "Python", "description": "Contribution to open-source project PyBOP. New features and bug fixes.", "duration": "60", "date": "01-05-25", "size": "medium" },
+
 { "name": "SAMS - Solar Atmospheric Modelling Suite", "language": ["C++", "MPI", "CUDA", "Kokkos"], "description": "Developing a framework code for sun-to-earth modelling of the solar and space environment. Including architecting the code, developing performant parallelisation strategies, high performance IO and numerical techniques", "duration": "60", "date": "01-07-26", "size": "medium" },
 { "name": "TRM Subs - ctd", "language": ["C++", "Python", "Rust"], "description": "A continuation of work on Tom Marsh's astrophysics simulation codes. This part of the project involves translating some of the core routines from C++ to Rust and adding Python bindings", "duration": "6", "date": "01-09-26", "size": "small" },
-
-
-{ "name": "", "language": "", "description": "", "duration": "", "date": "01-04-26", "size": "" }
+{ "name": "Atomic Simulation Environment", "language": "Python", "description": "Extended input processing for ORCA DFT code", "duration": "2", "date": "31-01-25", "size": "small" },
+{ "name": "Atomic Simulation Environment - Documentation", "language": "Python", "description": "Port and extend documentation", "duration": "-1", "date": "26-06-25", "size": "small" },
+{ "name": "Super-aLby", "language": "Python", "description": "Code Review of sper-aLby code with recommendations on how to improve the code", "duration": "1", "date": "19-05-25", "size": "small" },
+{ "name": "Quippy, f90wrap", "language": "Python, C++", "description": "Code review to identify the cause of failing compilation leading to recommendations on how to fix it", "duration": "6", "date": "14-04-25", "size": "small" },
 
 ];

@@ -254,12 +254,40 @@
 				margin-top: 16px;
 			}
 		}
+
+		.services-layout { display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+		.pie-wrap { position: relative; width: 100%; max-width: 450px; aspect-ratio: 536.64 / 544.32; flex: 1 1 300px; }
+		.pie-wrap img { display: block; width: 100%; height: 100%; }
+		.pie-slice {
+			position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+			background-repeat: no-repeat; background-size: 100% 100%;
+			cursor: pointer; transition: transform .25s ease; will-change: transform;
+		}
+		.pie-slice:hover { filter: drop-shadow(0 6px 10px rgba(0,0,0,.35)); }
+		.pie-slice:focus { outline: none; }
+		.pie-slice:focus-visible {
+			filter: drop-shadow(0 0 6px rgba(90,140,255,.95)) drop-shadow(0 0 14px rgba(90,140,255,.85));
+		}
+		.pie-slice.locked {
+			filter:
+				drop-shadow(2.5px 0 0 #00d4ff) drop-shadow(-2.5px 0 0 #00d4ff)
+				drop-shadow(0 2.5px 0 #00d4ff) drop-shadow(0 -2.5px 0 #00d4ff);
+		}
+		.pie-slice.locked:focus-visible {
+			filter:
+				drop-shadow(2.5px 0 0 #00d4ff) drop-shadow(-2.5px 0 0 #00d4ff)
+				drop-shadow(0 2.5px 0 #00d4ff) drop-shadow(0 -2.5px 0 #00d4ff)
+				drop-shadow(0 0 6px rgba(90,140,255,.95)) drop-shadow(0 0 14px rgba(90,140,255,.85));
+		}
+		.services-info-panel { flex: 1 1 260px; max-width: 360px; }
+		.services-info-panel h3 { margin: 0 0 8px; min-height: 3.9em; /* reserve 3 lines so the title length doesn't shift the paragraph below */ }
+		.services-info-panel p { margin: 0; }
 	</style>
 </head>
 <body>
 	<header>
 		<div class="header-copy">
-			<h1>Warwick RSE</h1>
+			<h1>Who are Warwick RSE</h1>
 			<p>We are the Research Software Engineering team embedded in the Scientific Computing <span class="tooltip-term" tabindex="0" role="img" aria-label="RTP: Research Technology Platform" data-tooltip="Research Technology Platform - an initiative to centralise shared research resources">RTP</span>.</p>
 		</div>
 		<img class="header-penguin" src="Angry_Penguin.svg" alt="Angry penguin illustration">
@@ -271,13 +299,131 @@
         <h2>What is Research Software Engineering?</h2>
         <p>Put simply, creation, maintenance and support of Software dedicated to research - software without which the research could not be carried out. This could be anything from large scale simulation software through to data analysis scripts, and even data presentation.</p>
         </section>
-		<section id="about">
-			<h2>About</h2>
-			<p>Warwick RSE work on a range of projects, mostly within the Scientific Computing domain, but we'll turn our hand to anything if we have the time and skills.</p>
+		
+        <section id="about">
+			<h2>Who Are We</h2>
+			<p>We work with all departments, both on funded and unfunded projects. We specialise in High-Performance computing, but we turn our hand to anything if we have the time and skills.</p>
             <p>This is our general github.io page, which we use to host temporary project documentation, examples and information we want to make publically accessible.</p>
             <p>Our official webpages are available on <a href="https://warwick.ac.uk/sc-rse">Warwick's website</a></p>
-            <p> Find out more about the sorts of projects we've taken on via our <a href="./ProjectDirectory/index.html">searchable directory</a> or our <a href="tbc"> detailled case studies </a>. Neither is exhaustive, and we really are happy to take on (almost) anything we can tackle for Warwick researchers - or point you to somebody who can.</p>
-		</section>
+
+	    </section>
+
+        <section id="services">
+            <h2>What We Do</h2>
+            <div class="services-layout" id="servicesLayout">
+                <div class="pie-wrap" id="pieWrap">
+                    <img id="pieImg" src="Logos-empty.svg" alt="Five segment logo wheel">
+                </div>
+                <div class="services-info-panel" id="infoPanel">
+                    <h3 id="infoTitle">Hover a segment</h3>
+                    <p id="infoBody">Hover over a segment of the logo to see more information about it here.</p>
+                </div>
+            </div>
+            <div><br></div>
+            <div>
+            <p> Find out more about the sorts of projects we've taken on via our <a href="./ProjectDirectory/index.html">searchable directory</a> or our <a href="tbc"> detailled case studies (link TBA) </a>. Or see just the projects we've been <a href="./ProjectDirectory/index.html?date=last-year">working on recently</a>. Neither is exhaustive, and we really are happy to take on (almost) anything we can tackle for Warwick researchers - or point you to somebody who can.</p>
+            </div>
+        </section>
+        <script>
+            // Builds 5 clickable/hoverable wedges over the pentagon logo so a segment can "explode" outward on hover.
+            // Assumes a regular 5-sided pentagon (straight edges, not arcs) with a vertex at the top (12 o'clock).
+            const SEGMENT_COUNT = 5;
+            const EXPLODE_DISTANCE = 22; // px to move a hovered slice outward
+            const DEFAULT_INFO = { title: 'What we do', body: 'Hover over a segment of the logo to see more. Click to focus one segment, and click again to return to hovering' };
+            // Placeholder copy per segment, in order: blue(0-72), black(72-144), pink(144-216), green(216-288), yellow(288-360)
+            const SEGMENT_INFO = [
+                { title: 'Bespoke Software Development', body: 'We can write software from scratch to solve a variety of research problems, in a range of languages.' },
+                { title: 'Building and Running on HPC', body: 'We can help you build your software on our hardware, write slurm scripts to run it, and give advice about options beyond Warwick and HPC time applications' },
+                { title: 'Teaching and Training', body: 'We run regular training sessions on software development topics, attend <a href="https://warwick.ac.uk/sc-dropin">drop-in</a> support sessions and can give custom seminars to your research group on request' },
+                { title: 'Spin-out Software', body: 'We can help clean up and formalise software that might arise from your research which can be turned into a more widely usable package' },
+                { title: 'Maintenance and Modernisation', body: 'We can help bring your software up-to-date, convert to newer language standards, clean it up and add testing and documentation too' },
+            ];
+            const infoTitle = document.getElementById('infoTitle');
+            const infoBody = document.getElementById('infoBody');
+
+            function showInfo(info) {
+                infoTitle.textContent = info.title;
+                infoBody.innerHTML = info.body;
+            }
+
+            function buildPieSlices(wrap, img) {
+                const src = img.getAttribute('src');
+                img.style.visibility = 'hidden'; // wedges recreate the visible pie; original stays only for sizing/fallback
+
+                const layout = document.getElementById('servicesLayout');
+                const infoPanel = document.getElementById('infoPanel');
+                // so tabbing toward the link/info text doesn't clear it before it can be reached
+                const leavingComponent = (relatedTarget) => !relatedTarget || !layout.contains(relatedTarget);
+
+                const slices = []; // {el, dx, dy} in segment order, so click/hover can restore a locked segment
+                let lockedIndex = null;
+
+                function setActive(activeIndex) {
+                    slices.forEach((s, idx) => {
+                        s.el.style.transform = idx === activeIndex ? `translate(${s.dx}px, ${s.dy}px)` : '';
+                        s.el.classList.toggle('locked', idx === lockedIndex);
+                        s.el.setAttribute('aria-pressed', String(idx === lockedIndex));
+                        // while a segment is locked, drop the others from tab order so Tab goes straight to the shown description's links
+                        s.el.tabIndex = (lockedIndex === null || idx === lockedIndex) ? 0 : -1;
+                    });
+                    showInfo(activeIndex === null ? DEFAULT_INFO : SEGMENT_INFO[activeIndex]);
+                }
+
+                for (let i = 0; i < SEGMENT_COUNT; i++) {
+                    const startDeg = i * (360 / SEGMENT_COUNT);
+                    const endDeg = startDeg + (360 / SEGMENT_COUNT);
+                    const midRad = ((startDeg + endDeg) / 2) * Math.PI / 180;
+
+                    const slice = document.createElement('div');
+                    slice.className = 'pie-slice';
+                    slice.style.backgroundImage = `url(${src})`;
+                    slice.tabIndex = 0; // lets Tab cycle through segments in DOM order
+                    slice.setAttribute('role', 'button');
+                    slice.setAttribute('aria-label', SEGMENT_INFO[i].title);
+                    slice.setAttribute('aria-pressed', 'false');
+                    // radius 100: the badge circles bulge past the pentagon's true 50%-radius edges, so the clip is
+                    // extended well beyond them along the same angular boundaries (badges stay within their own sector)
+                    slice.style.clipPath = wedgeClipPath(startDeg, endDeg, 1, 100);
+
+                    const dx = Math.round(Math.sin(midRad) * EXPLODE_DISTANCE);
+                    const dy = Math.round(-Math.cos(midRad) * EXPLODE_DISTANCE);
+                    slices.push({ el: slice, dx, dy });
+
+                    slice.addEventListener('mouseenter', () => { if (lockedIndex === null) setActive(i); });
+                    slice.addEventListener('mouseleave', () => { if (lockedIndex === null) setActive(null); });
+                    slice.addEventListener('focus', () => { if (lockedIndex === null) setActive(i); });
+                    slice.addEventListener('blur', (e) => { if (lockedIndex === null && leavingComponent(e.relatedTarget)) setActive(null); });
+                    slice.addEventListener('click', () => { lockedIndex = lockedIndex === i ? null : i; setActive(i); });
+                    slice.addEventListener('keydown', (e) => {
+                        if (e.key !== 'Enter' && e.key !== ' ') return;
+                        e.preventDefault();
+                        lockedIndex = lockedIndex === i ? null : i;
+                        setActive(i);
+                    });
+
+                    wrap.appendChild(slice);
+                }
+
+                infoPanel.addEventListener('focusout', (e) => { if (lockedIndex === null && leavingComponent(e.relatedTarget)) setActive(null); });
+            }
+
+            function wedgeClipPath(startDeg, endDeg, steps = 1, radius = 50) {
+                const points = ['50% 50%'];
+                for (let step = 0; step <= steps; step++) {
+                    const deg = startDeg + (endDeg - startDeg) * (step / steps);
+                    const rad = deg * Math.PI / 180;
+                    const x = 50 + radius * Math.sin(rad);
+                    const y = 50 - radius * Math.cos(rad);
+                    points.push(`${x}% ${y}%`);
+                }
+                return `polygon(${points.join(', ')})`;
+            }
+
+            const pieImg = document.getElementById('pieImg');
+            const pieWrap = document.getElementById('pieWrap');
+            if (pieImg.complete) buildPieSlices(pieWrap, pieImg);
+            else pieImg.addEventListener('load', () => buildPieSlices(pieWrap, pieImg));
+        </script>
 
 		<section id="team">
 			<h2>The Team (Alphabetically)</h2>
@@ -297,7 +443,7 @@
             </article>
             <article>
                 <h3> Sarah Roggendorf</h3>
-                <p>With a background in fluid dynamics, Sarah is the newest member of the SC team. She spent some time as an RSE working in Arts and Humanities, so has plenty of data presentation skills to draw on, as well as her algorithms experience. We also put her on a Fortran project, because all proper programmers should know Fortran!</p>
+                <p>With a background in applied maths (finite elements), Sarah is the newest member of the SC team. She spent some time as an RSE working in Arts and Humanities, so has plenty of data presentation skills to "draw" on, as well as her algorithms experience. We also put her on a Fortran project, because all proper programmers should know Fortran!</p>
             </article>
 		</section>
 		<section id="contact">
