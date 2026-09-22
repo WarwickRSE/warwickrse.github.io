@@ -38,6 +38,6 @@ const projects = [
 { "name": "Atomic Simulation Environment", "language": "Python", "description": "Extended input processing for ORCA DFT code", "duration": "2", "date": "31-01-25", "size": "small" },
 { "name": "Atomic Simulation Environment - Documentation", "language": "Python", "description": "Port and extend documentation", "duration": "-1", "date": "26-06-25", "size": "small" },
 { "name": "Super-aLby", "language": "Python", "description": "Code Review of sper-aLby code with recommendations on how to improve the code", "duration": "1", "date": "19-05-25", "size": "small" },
-{ "name": "Quippy, f90wrap", "language": "Python, C++", "description": "Code review to identify the cause of failing compilation leading to recommendations on how to fix it", "duration": "6", "date": "14-04-25", "size": "small" },
+{ "name": "Quippy, f90wrap", "language": ["Python", "C++"], "description": "Code review to identify the cause of failing compilation leading to recommendations on how to fix it", "duration": "6", "date": "14-04-25", "size": "small" },
 
 ];
