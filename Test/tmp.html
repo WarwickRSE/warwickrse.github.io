@@ -6,7 +6,7 @@
   <title>Project Catalogue</title>
   <style>
     .layout { display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
-    .pie-wrap { position: relative; width: 100%; max-width: 450px; aspect-ratio: 1677 / 1701; flex: 1 1 300px; }
+    .pie-wrap { position: relative; width: 100%; max-width: 450px; aspect-ratio: 536.64 / 544.32; flex: 1 1 300px; }
     .pie-wrap img { display: block; width: 100%; height: 100%; }
     .pie-slice {
       position: absolute; top: 0; left: 0; width: 100%; height: 100%;
@@ -14,6 +14,12 @@
       cursor: pointer; transition: transform .25s ease, filter .25s ease;
     }
     .pie-slice:hover { filter: drop-shadow(0 6px 10px rgba(0,0,0,.35)); }
+    .pie-slice:focus { outline: none; }
+    .pie-slice:focus-visible {
+      filter:
+        drop-shadow(0 0 6px rgba(90,140,255,.95)) drop-shadow(0 0 6px rgba(90,140,255,.95))
+        drop-shadow(0 0 14px rgba(90,140,255,.85));
+    }
     /* outline can't follow clip-path, so a bright ring is faked with stacked drop-shadows around the wedge */
     .pie-slice.locked {
       filter:
@@ -22,15 +28,25 @@
         drop-shadow(1.8px 1.8px 0 #00d4ff) drop-shadow(-1.8px 1.8px 0 #00d4ff)
         drop-shadow(1.8px -1.8px 0 #00d4ff) drop-shadow(-1.8px -1.8px 0 #00d4ff);
     }
+    /* combine both stacks so the locked ring and the tab-focus glow both show at once */
+    .pie-slice.locked:focus-visible {
+      filter:
+        drop-shadow(2.5px 0 0 #00d4ff) drop-shadow(-2.5px 0 0 #00d4ff)
+        drop-shadow(0 2.5px 0 #00d4ff) drop-shadow(0 -2.5px 0 #00d4ff)
+        drop-shadow(1.8px 1.8px 0 #00d4ff) drop-shadow(-1.8px 1.8px 0 #00d4ff)
+        drop-shadow(1.8px -1.8px 0 #00d4ff) drop-shadow(-1.8px -1.8px 0 #00d4ff)
+        drop-shadow(0 0 6px rgba(90,140,255,.95)) drop-shadow(0 0 6px rgba(90,140,255,.95))
+        drop-shadow(0 0 14px rgba(90,140,255,.85));
+    }
     .info-panel { flex: 1 1 260px; max-width: 360px; font-family: sans-serif; }
     .info-panel h2 { margin: 0 0 8px; font-size: 1.3em; }
     .info-panel p { margin: 0; line-height: 1.5; }
   </style>
 </head>
 <body>
-  <div class="layout">
+  <div class="layout" id="layout">
     <div class="pie-wrap" id="pieWrap">
-      <img id="pieImg" src="Logos2.png" alt="Five segment logo wheel">
+      <img id="pieImg" src="Logos-empty.svg" alt="Five segment logo wheel">
     </div>
     <div class="info-panel" id="infoPanel">
       <h2 id="infoTitle">Hover a segment</h2>
@@ -63,6 +79,11 @@
       const src = img.getAttribute('src');
       img.style.visibility = 'hidden'; // wedges recreate the visible pie; original stays only for sizing/fallback
 
+      const layout = document.getElementById('layout');
+      const infoPanel = document.getElementById('infoPanel');
+      // so tabbing toward the link/info text doesn't clear it before it can be reached
+      const leavingComponent = (relatedTarget) => !relatedTarget || !layout.contains(relatedTarget);
+
       const slices = []; // {el, dx, dy} in segment order, so click/hover can restore a locked segment
       let lockedIndex = null;
 
@@ -70,6 +91,9 @@
         slices.forEach((s, idx) => {
           s.el.style.transform = idx === activeIndex ? `translate(${s.dx}px, ${s.dy}px)` : '';
           s.el.classList.toggle('locked', idx === lockedIndex);
+          s.el.setAttribute('aria-pressed', String(idx === lockedIndex));
+          // while a segment is locked, drop the others from tab order so Tab goes straight to the shown description's links
+          s.el.tabIndex = (lockedIndex === null || idx === lockedIndex) ? 0 : -1;
         });
         showInfo(activeIndex === null ? DEFAULT_INFO : SEGMENT_INFO[activeIndex]);
       }
@@ -82,6 +106,10 @@
         const slice = document.createElement('div');
         slice.className = 'pie-slice';
         slice.style.backgroundImage = `url(${src})`;
+        slice.tabIndex = 0; // lets Tab cycle through segments in DOM order
+        slice.setAttribute('role', 'button');
+        slice.setAttribute('aria-label', SEGMENT_INFO[i].title);
+        slice.setAttribute('aria-pressed', 'false');
         // radius 100: the badge circles bulge past the pentagon's true 50%-radius edges, so the clip is
         // extended well beyond them along the same angular boundaries (badges stay within their own sector)
         slice.style.clipPath = wedgeClipPath(startDeg, endDeg, 1, 100);
@@ -92,10 +120,20 @@
 
         slice.addEventListener('mouseenter', () => { if (lockedIndex === null) setActive(i); });
         slice.addEventListener('mouseleave', () => { if (lockedIndex === null) setActive(null); });
+        slice.addEventListener('focus', () => { if (lockedIndex === null) setActive(i); });
+        slice.addEventListener('blur', (e) => { if (lockedIndex === null && leavingComponent(e.relatedTarget)) setActive(null); });
         slice.addEventListener('click', () => { lockedIndex = lockedIndex === i ? null : i; setActive(i); });
+        slice.addEventListener('keydown', (e) => {
+          if (e.key !== 'Enter' && e.key !== ' ') return;
+          e.preventDefault();
+          lockedIndex = lockedIndex === i ? null : i;
+          setActive(i);
+        });
 
         wrap.appendChild(slice);
       }
+
+      infoPanel.addEventListener('focusout', (e) => { if (lockedIndex === null && leavingComponent(e.relatedTarget)) setActive(null); });
     }
 
     function wedgeClipPath(startDeg, endDeg, steps = 1, radius = 50) {
